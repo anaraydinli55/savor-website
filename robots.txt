@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
-Sitemap: https://savor.az/sitemap.php
+
+Sitemap: https://savor-website.vercel.app/sitemap.xml
