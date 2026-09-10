@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kulinariya və Reseptlər | Savor Kərə Yağları & Ghee</title>
-  <meta name="description" content="Savor kərə yağı və Ghee ilə hazırlanan ən dadlı Azərbaycan və dünya mətbəxi reseptləri: Şah Plov, Klassik Paxlava, Qat-qat Napoleon Tortu.">
+  <title>Kulinariya & Reseptlər | Savor Kərə Yağları & Ghee</title>
+  <meta name="description" content="Savor kərə yağı və Ghee ilə hazırlanan ən dadlı Azərbaycan və dünya mətbəxi reseptləri: Şah Plov, Səbzi Qovurma, Paxlava, Badambura, Kətə, Ballı Tort və Napoleon.">
   <link rel="canonical" href="https://savor-website.vercel.app/recipes/" />
   
-  <!-- Swiper.js CSS (Karusel üçün) -->
+  <!-- Swiper.js CSS (Karusel) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -32,42 +32,44 @@
     }
 
     .recipe-header {
-      background: linear-gradient(rgba(18, 32, 23, 0.85), rgba(18, 32, 23, 0.95)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80') center/cover;
+      background: linear-gradient(rgba(18, 32, 23, 0.88), rgba(18, 32, 23, 0.95)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80') center/cover;
       color: white;
-      padding: 90px 20px 60px;
+      padding: 85px 20px 50px;
       text-align: center;
     }
 
     .recipe-header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin-bottom: 15px;
+      font-size: 2.9rem;
+      margin-bottom: 12px;
       color: #f7e7ce;
     }
 
     .recipe-header p {
       font-size: 1.15rem;
-      max-width: 680px;
-      margin: 0 auto 30px;
+      max-width: 720px;
+      margin: 0 auto 28px;
       color: #d1d5db;
+      line-height: 1.6;
     }
 
     .filter-container {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .filter-btn {
       background: rgba(255,255,255,0.1);
       color: white;
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 10px 22px;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px 20px;
       border-radius: 30px;
       cursor: pointer;
       font-weight: 600;
+      font-size: 0.92rem;
       transition: all 0.3s ease;
     }
 
@@ -79,11 +81,11 @@
     }
 
     .recipes-container {
-      max-width: 1200px;
-      margin: 50px auto;
+      max-width: 1260px;
+      margin: 40px auto 70px;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
       gap: 35px;
     }
 
@@ -91,22 +93,21 @@
       background: var(--card-bg);
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       transition: all 0.4s ease;
       display: flex;
       flex-direction: column;
-      border: 1px solid rgba(0,0,0,0.04);
+      border: 1px solid rgba(0,0,0,0.05);
     }
 
     .recipe-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(18, 32, 23, 0.12);
+      transform: translateY(-7px);
+      box-shadow: 0 20px 45px rgba(18, 32, 23, 0.12);
     }
 
     .swiper {
       width: 100%;
-      height: 270px;
-      border-radius: 20px 20px 0 0;
+      height: 260px;
     }
 
     .swiper-slide img {
@@ -116,7 +117,7 @@
     }
 
     .recipe-body {
-      padding: 28px;
+      padding: 26px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -126,44 +127,40 @@
       align-self: flex-start;
       background: #f0e6d6;
       color: #8c6828;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
       padding: 5px 12px;
       border-radius: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .recipe-title {
       font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      margin: 0 0 12px;
+      font-size: 1.55rem;
+      margin: 0 0 10px;
       color: var(--primary-dark);
+      line-height: 1.3;
     }
 
     .meta-tags {
       display: flex;
-      gap: 15px;
-      font-size: 0.88rem;
+      gap: 14px;
+      font-size: 0.86rem;
       color: var(--text-muted);
-      margin-bottom: 18px;
-      padding-bottom: 15px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
       border-bottom: 1px dashed #e2e8f0;
-    }
-
-    .meta-tags span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      flex-wrap: wrap;
     }
 
     .savor-highlight {
       background: #fbf6ee;
       border-left: 4px solid var(--primary-gold);
-      padding: 12px 16px;
+      padding: 11px 15px;
       border-radius: 0 10px 10px 0;
-      margin-bottom: 20px;
-      font-size: 0.92rem;
+      margin-bottom: 18px;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #6b4d1b;
       display: flex;
@@ -175,38 +172,39 @@
       color: #8c6828;
       text-decoration: underline;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
     }
 
     .section-subtitle {
-      font-size: 1rem;
+      font-size: 0.96rem;
       font-weight: 700;
       color: var(--primary-dark);
-      margin: 15px 0 10px;
+      margin: 12px 0 8px;
     }
 
     .ingredients-list {
       list-style: none;
       padding: 0;
-      margin: 0 0 20px;
+      margin: 0 0 16px;
     }
 
     .ingredients-list li {
+      padding: 5px 0;
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+
+    .ingredients-list label {
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 6px 0;
-      font-size: 0.92rem;
-      color: #4a5568;
       cursor: pointer;
-      user-select: none;
     }
 
     .ingredients-list input[type="checkbox"] {
       accent-color: var(--primary-gold);
       width: 17px;
       height: 17px;
-      cursor: pointer;
     }
 
     .ingredients-list input[type="checkbox"]:checked + span {
@@ -215,19 +213,19 @@
     }
 
     .steps-list {
-      padding-left: 20px;
-      margin: 0 0 20px;
-      font-size: 0.92rem;
+      padding-left: 18px;
+      margin: 0 0 10px;
+      font-size: 0.88rem;
       color: #4a5568;
       line-height: 1.6;
     }
 
     .steps-list li {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .nav-bar-top {
-      padding: 18px 30px;
+      padding: 16px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -247,7 +245,7 @@
     }
   </style>
 
-  <!-- Recipe Schema JSON-LD (SEO & AI Search) -->
+  <!-- Schema.org Recipe JSON-LD for Google & AI Search -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -255,58 +253,51 @@
       {
         "@type": "Recipe",
         "name": "Əsl Zəfəranlı Şah Plov (Savor Ghee ilə)",
-        "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b",
         "author": { "@type": "Organization", "name": "Savor" },
-        "prepTime": "PT30M",
-        "cookTime": "PT90M",
-        "totalTime": "PT120M",
-        "keywords": "Şah Plov resepti, Ghee yağı ilə plov, Savor kərə yağı",
-        "recipeYield": "6-8 nəfərlik",
         "recipeCategory": "Milli Təamlar",
-        "recipeIngredient": [
-          "150q Savor Ghee (əridilmiş kərə yağı)",
-          "3 stəkan basmati düyü",
-          "600q quzu əti",
-          "3 ədəd baş soğan",
-          "150q şabalıd və qaysı",
-          "Zəfəran və duz",
-          "Lavaş (qazmaq üçün)"
-        ]
+        "recipeYield": "6-8 nəfərlik"
       },
       {
         "@type": "Recipe",
-        "name": "Klassik Azərbaycan Paxlavası (Savor Kərə Yağı ilə)",
-        "image": "https://images.unsplash.com/photo-1519869325930-281384150729",
+        "name": "Səbzi Qovurma Plovu",
         "author": { "@type": "Organization", "name": "Savor" },
-        "prepTime": "PT45M",
-        "cookTime": "PT40M",
-        "recipeYield": "12 nəfərlik",
+        "recipeCategory": "Milli Təamlar",
+        "recipeYield": "5-6 nəfərlik"
+      },
+      {
+        "@type": "Recipe",
+        "name": "Klassik Azərbaycan Paxlavası",
+        "author": { "@type": "Organization", "name": "Savor" },
         "recipeCategory": "Milli Şirniyyatlar",
-        "recipeIngredient": [
-          "300q Savor Kərə Yağı (əridilmiş)",
-          "1 kq əla növ un",
-          "500q qoz ləpəsi",
-          "500q şəkər tozu",
-          "3 ədəd yumurta",
-          "Hil və zəfəran şərbəti"
-        ]
+        "recipeYield": "12-15 nəfərlik"
       },
       {
         "@type": "Recipe",
-        "name": "Qat-qat Xırtıldayan Napoleon Tortu (Savor Yağı ilə)",
-        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+        "name": "Zərif Badambura",
         "author": { "@type": "Organization", "name": "Savor" },
-        "prepTime": "PT50M",
-        "cookTime": "PT30M",
-        "recipeYield": "8 nəfərlik",
-        "recipeCategory": "Desertlər & Tortlar",
-        "recipeIngredient": [
-          "350q soyuq Savor Kərə Yağı",
-          "450q un",
-          "150ml buzlu su",
-          "1 x.q. sirkə",
-          "Zavarnoy krem üçün 200q Savor Kərə Yağı və qatılaşdırılmış süd"
-        ]
+        "recipeCategory": "Milli Şirniyyatlar",
+        "recipeYield": "10-12 nəfərlik"
+      },
+      {
+        "@type": "Recipe",
+        "name": "Qarabağ Kətəsi",
+        "author": { "@type": "Organization", "name": "Savor" },
+        "recipeCategory": "Milli Şirniyyatlar",
+        "recipeYield": "8 nəfərlik"
+      },
+      {
+        "@type": "Recipe",
+        "name": "Xırtıldayan Napoleon Tortu",
+        "author": { "@type": "Organization", "name": "Savor" },
+        "recipeCategory": "Tortlar & Desertlər",
+        "recipeYield": "8-10 nəfərlik"
+      },
+      {
+        "@type": "Recipe",
+        "name": "Klassik Ballı Tort (Medovik)",
+        "author": { "@type": "Organization", "name": "Savor" },
+        "recipeCategory": "Tortlar & Desertlər",
+        "recipeYield": "10-12 nəfərlik"
       }
     ]
   }
@@ -314,22 +305,24 @@
 </head>
 <body>
 
-  <!-- Sadə Naviqasiya -->
+  <!-- Naviqasiya -->
   <header class="nav-bar-top">
     <a href="../index.html">← Ana Səhifəyə Qayıt</a>
-    <span style="color: var(--primary-gold); font-weight: 700; letter-spacing: 1px;">SAVOR KULİNARİYA</span>
+    <span style="color: var(--primary-gold); font-weight: 700; letter-spacing: 1px;">SAVOR KULİNARİYA DÜNYASI</span>
     <a href="../contact.php.html">Əlaqə & Sifariş</a>
   </header>
 
   <!-- Başlıq və Filterlər -->
   <section class="recipe-header">
-    <h1>Savor Kulinariya Dünyası</h1>
-    <p>Savor-un 100% təbii kərə yağları və ətirli Ghee məhsulları ilə hazırlanan, süfrənizin bəzəyi olacaq ən dadlı və seçilmiş reseptlər.</p>
+    <h1>Savor Kulinariya Reseptləri</h1>
+    <p>100% təbii Savor kərə yağları və ətirli Ghee ilə hazırlanan, süfrənizin bəzəyi olacaq ən dadlı milli yeməklər, şirniyyatlar və incə desertlər.</p>
     
     <div class="filter-container">
-      <button class="filter-btn active" onclick="filterRecipes('all')">Bütün Reseptlər</button>
+      <button class="filter-btn active" onclick="filterRecipes('all')">Bütün Reseptlər (9)</button>
       <button class="filter-btn" onclick="filterRecipes('milli')">Milli Yeməklər</button>
-      <button class="filter-btn" onclick="filterRecipes('sirniyyat')">Şirniyyat & Tortlar</button>
+      <button class="filter-btn" onclick="filterRecipes('seher')">Səhər Təamları</button>
+      <button class="filter-btn" onclick="filterRecipes('sirniyyat')">Milli Şirniyyatlar</button>
+      <button class="filter-btn" onclick="filterRecipes('tort')">Tortlar & Desertlər</button>
     </div>
   </section>
 
@@ -338,176 +331,322 @@
 
     <!-- 1. ŞAH PLOV -->
     <article class="recipe-card" data-category="milli">
-      <!-- Çoxşəkilli Karusel -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80" alt="Zəfəranlı Şah Plov">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80" alt="Şah Plov Qazmaq və Ət">
-          </div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80" alt="Şah Plov"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80" alt="Qazmaqlı Plov"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-
       <div class="recipe-body">
         <span class="badge-category">Milli Təamlar</span>
         <h2 class="recipe-title">Əsl Zəfəranlı Şah Plov</h2>
-        
-        <div class="meta-tags">
-          <span>⏱️ 120 dəq</span>
-          <span>👨‍🍳 Çətinlik: Orta</span>
-          <span>🍽️ 6-8 nəfərlik</span>
-        </div>
-
+        <div class="meta-tags"><span>⏱️ 120 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 6-8 nəfərlik</span></div>
         <div class="savor-highlight">
           <span>🧈 Məsləhət: <strong>Savor Ghee (150q)</strong></span>
           <a href="../product.php?slug=ghee-600g&lang=az.html">Məhsula bax →</a>
         </div>
-
-        <div class="section-subtitle">🛒 Tərkibi (İşarələyin):</div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
         <ul class="ingredients-list">
           <li><label><input type="checkbox"> <span>150q Savor Ghee (əridilmiş kərə yağı)</span></label></li>
-          <li><label><input type="checkbox"> <span>3 stəkan uzun basmati düyü</span></label></li>
-          <li><label><input type="checkbox"> <span>600q quzu və ya dana əti</span></label></li>
-          <li><label><input type="checkbox"> <span>3 ədəd soğan, qaysı və şabalıd</span></label></li>
-          <li><label><input type="checkbox"> <span>Qazmaq üçün nazik lavaşlar</span></label></li>
-          <li><label><input type="checkbox"> <span>Təbii zəfəran dəmləməsi</span></label></li>
+          <li><label><input type="checkbox"> <span>3 stəkan basmati düyü</span></label></li>
+          <li><label><input type="checkbox"> <span>600q quzu əti, qaysı və şabalıd</span></label></li>
+          <li><label><input type="checkbox"> <span>Lavaş və təbii zəfəran dəmləməsi</span></label></li>
         </ul>
-
         <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
         <ol class="steps-list">
-          <li>Düyü ilıq duzlu suda 1 saat saxlanılır və yarıhazır vəziyyətə qədər qaynadılıb süzülür.</li>
-          <li>Ət doğranıb soğan və Savor Ghee ilə qızardılır, şabalıd və qaysı əlavə edilir.</li>
-          <li>Qazan Savor Ghee ilə yağlanır, lavaşlar qazana döşənir, düyü və ət qat-qat yığılıb zəfəran gəzdirilir.</li>
-          <li>180°C sobada lavaş qızılı rəng alana qədər (təxm. 60 dəq) dəmə qoyulur.</li>
+          <li>Düyü süzülür, ət soğan və Savor Ghee ilə qovrulur.</li>
+          <li>Qazan Savor Ghee ilə yağlanır, lavaş düzülüb düyü və ət qat-qat yığılır.</li>
+          <li>180°C sobada 60 dəqiqə qızılı rəng alana qədər dəmə qoyulur.</li>
         </ol>
       </div>
     </article>
 
-    <!-- 2. AZƏRBAYCAN PAXLAVASI -->
-    <article class="recipe-card" data-category="sirniyyat">
+    <!-- 2. SƏBZİ QOVURMA PLOV -->
+    <article class="recipe-card" data-category="milli">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" alt="Klassik Azərbaycan Paxlavası">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80" alt="Paxlava qozlu içlik">
-          </div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Səbzi Qovurma"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Göyərtili Qovurma"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-
       <div class="recipe-body">
-        <span class="badge-category">Şirniyyat</span>
-        <h2 class="recipe-title">Klassik Azərbaycan Paxlavası</h2>
-        
-        <div class="meta-tags">
-          <span>⏱️ 90 dəq</span>
-          <span>👨‍🍳 Çətinlik: Usta</span>
-          <span>🍽️ 12-15 nəfərlik</span>
+        <span class="badge-category">Milli Təamlar</span>
+        <h2 class="recipe-title">Səbzi Qovurma Plovu</h2>
+        <div class="meta-tags"><span>⏱️ 90 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 5-6 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (180q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
         </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>180q Savor Kərə Yağı</span></label></li>
+          <li><label><input type="checkbox"> <span>500q quzu əti və 2 baş soğan</span></label></li>
+          <li><label><input type="checkbox"> <span>Kəvər, keşniş, şüyüd, ispanaq, quzuqulağı</span></label></li>
+          <li><label><input type="checkbox"> <span>Limon suyu və ya abqora</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>Ət qaynadılıb soğanla Savor kərə yağında qızardılır.</li>
+          <li>Göyərtilər iri doğranıb bol Savor kərə yağında zəif odda pörtlədilir.</li>
+          <li>Ət və göyərti birləşdirilib abqora əlavə olunur və zəfəranlı düyü ilə verilir.</li>
+        </ol>
+      </div>
+    </article>
 
+    <!-- 3. KƏRƏ YAĞLI POMİDOR-YUMURTA -->
+    <article class="recipe-card" data-category="seher">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Pomidor Yumurta"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Səhər Yeməyi"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="recipe-body">
+        <span class="badge-category">Səhər Təamı</span>
+        <h2 class="recipe-title">Bol Yağlı Pomidor-Yumurta</h2>
+        <div class="meta-tags"><span>⏱️ 20 dəq</span><span>👨‍🍳 Çətinlik: Asan</span><span>🍽️ 2-3 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (80q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
+        </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>80q təbii Savor Kərə Yağı</span></label></li>
+          <li><label><input type="checkbox"> <span>4 ədəd sulu Zirə pomidoru</span></label></li>
+          <li><label><input type="checkbox"> <span>4 ədəd kənd yumurtası</span></label></li>
+          <li><label><input type="checkbox"> <span>Duz və istiot</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>Pomidorların qabığı soyulub doğranır və suyu çəkilənə qədər bişirilir.</li>
+          <li>Bol Savor kərə yağı əlavə olunub qovrulur, üzərinə yumurtalar çalınıb zəif odda bişirilir.</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- 4. AZƏRBAYCAN PAXLAVASI -->
+    <article class="recipe-card" data-category="sirniyyat">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80" alt="Azərbaycan Paxlavası"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=800&q=80" alt="Qozlu Paxlava"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="recipe-body">
+        <span class="badge-category">Milli Şirniyyat</span>
+        <h2 class="recipe-title">Klassik Azərbaycan Paxlavası</h2>
+        <div class="meta-tags"><span>⏱️ 90 dəq</span><span>👨‍🍳 Çətinlik: Usta</span><span>🍽️ 12-15 nəfərlik</span></div>
         <div class="savor-highlight">
           <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (300q)</strong></span>
           <a href="../products.php.html">Məhsula bax →</a>
         </div>
-
-        <div class="section-subtitle">🛒 Tərkibi (İşarələyin):</div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>300q ilıq əridilmiş Savor Kərə Yağı</span></label></li>
-          <li><label><input type="checkbox"> <span>1 kq əla növ buğda unu</span></label></li>
-          <li><label><input type="checkbox"> <span>500q xırdalanmış qoz ləpəsi</span></label></li>
-          <li><label><input type="checkbox"> <span>500q şəkər tozu və üyüdülmüş hil</span></label></li>
-          <li><label><input type="checkbox"> <span>Şərbət üçün: 2 st şəkər, 1 st su və zəfəran</span></label></li>
+          <li><label><input type="checkbox"> <span>300q əridilmiş Savor Kərə Yağı</span></label></li>
+          <li><label><input type="checkbox"> <span>1 kq əla növ un və 3 yumurta</span></label></li>
+          <li><label><input type="checkbox"> <span>500q qoz ləpəsi və 500q şəkər tozu</span></label></li>
+          <li><label><input type="checkbox"> <span>Hil və zəfəran şərbəti</span></label></li>
         </ul>
-
         <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
         <ol class="steps-list">
-          <li>Xəmir kərə yağı, süd və yumurta ilə elastik yoğrulub 10-12 kündəyə bölünür.</li>
-          <li>Hər qat nazik yayılır, aralarına bol Savor kərə yağı çəkilir və qozlu içlik səpilir.</li>
-          <li>Romb şəklində kəsilib 180°C sobada 35-40 dəqiqə bişirilir və çıxarılan kimi qaynar şərbət tökülür.</li>
+          <li>Xəmir nazik yayılır, aralarına bol Savor kərə yağı çəkilir və içlik səpilir.</li>
+          <li>Romb kəsilib 180°C sobada qızardılır və qaynar şərbət tökülür.</li>
         </ol>
       </div>
     </article>
 
-    <!-- 3. NAPOLEON TORTU -->
+    <!-- 5. ZƏRİF BADAMBURA -->
     <article class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Qat-qat Napoleon Tortu">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Napoleon kərə yağı kremi">
-          </div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Badambura"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80" alt="Qat-qat Xəmir"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+      <div class="recipe-body">
+        <span class="badge-category">Milli Şirniyyat</span>
+        <h2 class="recipe-title">Zərif Qat-qat Badambura</h2>
+        <div class="meta-tags"><span>⏱️ 80 dəq</span><span>👨‍🍳 Çətinlik: Usta</span><span>🍽️ 10-12 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (250q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
+        </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>250q ilıq Savor Kərə Yağı (qatlar üçün)</span></label></li>
+          <li><label><input type="checkbox"> <span>700q un, 200ml süd və 1 yumurta</span></label></li>
+          <li><label><input type="checkbox"> <span>300q üyüdülmüş təmiz badam və şəkər</span></label></li>
+          <li><label><input type="checkbox"> <span>Üyüdülmüş hil və vanil</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>Xəmirlər nazik yayılıb aralarına Savor kərə yağı sürtülərək üst-üstə yığılır və rulet bükülür.</li>
+          <li>Rulet kəsilib içi açılır, badam içliyi qoyulub bükülür və 160°C sobada ağappaq bişirilir.</li>
+        </ol>
+      </div>
+    </article>
 
+    <!-- 6. QARABAĞ KƏTƏSİ -->
+    <article class="recipe-card" data-category="sirniyyat">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=800&q=80" alt="Qarabağ Kətəsi"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Kətə İçliyi"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="recipe-body">
+        <span class="badge-category">Milli Şirniyyat</span>
+        <h2 class="recipe-title">Əsl Qarabağ Kətəsi</h2>
+        <div class="meta-tags"><span>⏱️ 60 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 8 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (200q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
+        </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>200q soyudulmuş Savor Kərə Yağı (İçlik üçün)</span></label></li>
+          <li><label><input type="checkbox"> <span>500q un, 150q şəkər tozu və vanil</span></label></li>
+          <li><label><input type="checkbox"> <span>Xəmir üçün: 400q un, 150q xama və maya</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>İçlik (xoruz): Savor kərə yağı un və şəkərlə ovulub qum halına gətirilir.</li>
+          <li>Xəmir yayılır, içinə bol kərə yağlı içlik qoyulub dairəvi bükülür və 180°C sobada qızardılır.</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- 7. NAPOLEON TORTU -->
+    <article class="recipe-card" data-category="tort">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Napoleon Tortu"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Napoleon Kremi"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
       <div class="recipe-body">
         <span class="badge-category">Tort & Desert</span>
         <h2 class="recipe-title">Xırtıldayan Napoleon Tortu</h2>
-        
-        <div class="meta-tags">
-          <span>⏱️ 80 dəq</span>
-          <span>👨‍🍳 Çətinlik: Orta</span>
-          <span>🍽️ 8-10 nəfərlik</span>
-        </div>
-
+        <div class="meta-tags"><span>⏱️ 80 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 8-10 nəfərlik</span></div>
         <div class="savor-highlight">
           <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (350q)</strong></span>
           <a href="../products.php.html">Məhsula bax →</a>
         </div>
-
-        <div class="section-subtitle">🛒 Tərkibi (İşarələyin):</div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
         <ul class="ingredients-list">
           <li><label><input type="checkbox"> <span>350q dondurulmuş Savor Kərə Yağı</span></label></li>
-          <li><label><input type="checkbox"> <span>450q un və 1 çimdik duz</span></label></li>
-          <li><label><input type="checkbox"> <span>150ml buzlu su və 1 x.q. sirkə</span></label></li>
-          <li><label><input type="checkbox"> <span>Krem üçün: 200q otaq temperaturlu Savor kərə yağı və qatılaşdırılmış süd</span></label></li>
+          <li><label><input type="checkbox"> <span>450q un, buzlu su və sirkə</span></label></li>
+          <li><label><input type="checkbox"> <span>Krem: 200q Savor yağı və qatılaşdırılmış süd</span></label></li>
         </ul>
-
         <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
         <ol class="steps-list">
-          <li>Soyuq Savor kərə yağı unla sürtgəcdən keçirilib qum halına salınır, buzlu su ilə tez yoğrulur.</li>
-          <li>Xəmir 8-10 hissəyə bölünüb nazik yayılır və 200°C sobada 5-7 dəq qızardılır.</li>
-          <li>Kərə yağı və qatılaşdırılmış süd mikserlə çalınıb korjların arasına bolca sürtülür.</li>
+          <li>Kərə yağı unla sürtgəcdən keçirilir, yoğrulub 10 korj şəklində bişirilir.</li>
+          <li>Kərə yağı kremi ilə korjlar yağlanıb xırdalanmış qırıntılarla örtülür.</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- 8. BALLI TORT (MEDOVİK) -->
+    <article class="recipe-card" data-category="tort">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=800&q=80" alt="Ballı Tort Medovik"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Medovik dilimi"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="recipe-body">
+        <span class="badge-category">Tort & Desert</span>
+        <h2 class="recipe-title">Klassik Ballı Tort (Medovik)</h2>
+        <div class="meta-tags"><span>⏱️ 75 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 10-12 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (200q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
+        </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>100q Savor Kərə Yağı (xəmir) + 150q (krem)</span></label></li>
+          <li><label><input type="checkbox"> <span>3 x.q. təbii bal və 1 st şəkər tozu</span></label></li>
+          <li><label><input type="checkbox"> <span>3 yumurta, 1 ç.q. soda və 400q un</span></label></li>
+          <li><label><input type="checkbox"> <span>Krem üçün: Bişmiş qatılaşdırılmış süd və xama</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>Bal, şəkər və Savor yağı buxar vannasında əridilib soda əlavə edilir və xəmir yoğrulur.</li>
+          <li>8 nazik qat bişirilir və zərif Savor kərə yağlı kremlə birləşdirilir.</li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- 9. ŞOKOLADLI BRAUNİ -->
+    <article class="recipe-card" data-category="tort">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Şokoladlı Brauni"></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1515037893149-de7f840978e2?auto=format&fit=crop&w=800&q=80" alt="Brauni şokolad kərə yağı"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="recipe-body">
+        <span class="badge-category">Desert</span>
+        <h2 class="recipe-title">Zəngin Şokoladlı Brauni</h2>
+        <div class="meta-tags"><span>⏱️ 35 dəq</span><span>👨‍🍳 Çətinlik: Asan</span><span>🍽️ 6-8 nəfərlik</span></div>
+        <div class="savor-highlight">
+          <span>🧈 Məsləhət: <strong>Savor Kərə Yağı (180q)</strong></span>
+          <a href="../products.php.html">Məhsula bax →</a>
+        </div>
+        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <ul class="ingredients-list">
+          <li><label><input type="checkbox"> <span>180q keyfiyyətli Savor Kərə Yağı</span></label></li>
+          <li><label><input type="checkbox"> <span>200q tünd qara şokolad (70%)</span></label></li>
+          <li><label><input type="checkbox"> <span>3 yumurta və 150q qəhvəyi şəkər</span></label></li>
+          <li><label><input type="checkbox"> <span>100q un və 30q kakao tozu</span></label></li>
+        </ul>
+        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <ol class="steps-list">
+          <li>Savor kərə yağı şokoladla birlikdə əridilir və ilıdılır.</li>
+          <li>Yumurta və şəkər çalınır, şokoladlı kərə yağı qarışığı və un əlavə olunub 175°C sobada 22-25 dəqiqə bişirilir.</li>
         </ol>
       </div>
     </article>
 
   </main>
 
-  <!-- Swiper.js Script (Karusel üçün) -->
+  <!-- Swiper.js Script & Filter -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    // Bütün karuselləri aktivləşdiririk
     const swiper = new Swiper('.mySwiper', {
       loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      autoplay: { delay: 3500, disableOnInteraction: false },
     });
 
-    // Kateqoriya Filtri
     function filterRecipes(category) {
       const buttons = document.querySelectorAll('.filter-btn');
       buttons.forEach(btn => btn.classList.remove('active'));
