@@ -32,4 +32,8 @@
     <loc>https://savor-website.vercel.app/contact.php.html</loc>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://savor-website.vercel.app/recipes/</loc>
+    <priority>0.90</priority>
+  </url>
 </urlset>
