@@ -1,4 +1,4 @@
-import os
+import os, re
 
 images_map = {
     1: ["https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg", "https://b7x9kq.arazmarket.az/storage/blog/sah-plov-2-edited.png", "../images/savor21.jpeg", "https://tse1.mm.bing.net/th/id/OIP.12ML-y5wGvq2iqNEZG33cgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", "https://i.pinimg.com/736x/e5/0f/79/e50f79edb5624b37b0202337d80517d5.jpg", "https://www.rttotravel.com/templates/yootheme/cache/12/Maqluba-121dbb80.jpeg", "https://i1.wp.com/ashleyparamore.com/wp-content/uploads/2021/07/IMG_3673.jpg?w=2048&ssl=1", "https://i.pinimg.com/736x/f3/59/8a/f3598a9d64c8ba8671b3a4e3b64857f4.jpg"],
@@ -137,7 +137,7 @@ def generate_html(lang):
         copy_text = "© 2026 SAVOR. Все права защищены."
         motto_text = "Качество • Прозрачность • Стабильные поставки"
 
-    else: # English
+    else:
         title = "Culinary & Recipes | Savor Butter & Ghee"
         desc = "Delicious traditional Azerbaijani and gourmet recipes made with 100% natural Savor butter and Ghee."
         back_text = "← Home Page"
@@ -243,7 +243,7 @@ def generate_html(lang):
 <html lang="{lang}">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>{title}</title>
   <meta name="description" content="{desc}">
   
@@ -253,7 +253,7 @@ def generate_html(lang):
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 
   <style>
-    :root {
+    :root {{
       --primary-gold: #c59d5f;
       --primary-dark: #1f1d1a;
       --accent-brown: #965627;
@@ -262,76 +262,78 @@ def generate_html(lang):
       --text-main: #1f1d1a;
       --text-muted: #6b665f;
       --border-soft: #ddd7cd;
-    }
+    }}
 
-    *, *::before, *::after {
+    *, *::before, *::after {{
       box-sizing: border-box !important;
       margin: 0;
       padding: 0;
-    }
+    }}
     
-    html, body {
+    html, body {{
       overflow-x: hidden !important;
       width: 100% !important;
-      max-width: 100vw !important;
+      max-width: 100% !important;
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: var(--bg-cream);
       color: var(--text-main);
-    }
+      margin: 0 !important;
+      padding: 0 !important;
+    }}
 
-    .nav-bar-top {
+    .nav-bar-top {{
       width: 100%;
-      padding: 14px 25px;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #171411;
       border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
+    }}
 
-    .nav-back {
+    .nav-back {{
       color: #e5ded6;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.92rem;
       transition: color 0.2s;
-    }
+    }}
 
-    .nav-back:hover {
+    .nav-back:hover {{
       color: var(--primary-gold);
-    }
+    }}
 
-    .nav-brand {
+    .nav-brand {{
       color: var(--primary-gold);
       font-weight: 800;
       letter-spacing: 2px;
       font-size: 1.1rem;
-    }
+    }}
 
-    .nav-right {
+    .nav-right {{
       display: flex;
       align-items: center;
       gap: 15px;
-    }
+    }}
 
-    .lang-switch {
+    .lang-switch {{
       display: flex;
       gap: 10px;
       font-size: 0.88rem;
       font-weight: 700;
-    }
+    }}
 
-    .lang-switch a {
+    .lang-switch a {{
       color: #8c8275;
       text-decoration: none;
       transition: color 0.2s;
-    }
+    }}
 
-    .lang-switch a.active, .lang-switch a:hover {
+    .lang-switch a.active, .lang-switch a:hover {{
       color: var(--primary-gold);
-    }
+    }}
 
-    .btn-order {
+    .btn-order {{
       background-color: var(--accent-brown);
       color: white !important;
       padding: 7px 16px;
@@ -340,46 +342,47 @@ def generate_html(lang):
       font-size: 0.86rem;
       font-weight: 700;
       transition: all 0.2s;
-    }
+    }}
 
-    .btn-order:hover {
+    .btn-order:hover {{
       background-color: #7a3e18;
       transform: translateY(-2px);
-    }
+    }}
 
-    .recipe-header {
+    .recipe-header {{
       width: 100%;
       background: linear-gradient(rgba(23, 20, 17, 0.88), rgba(23, 20, 17, 0.95)), url('https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg') center/cover;
       color: white;
-      padding: 65px 20px 40px;
+      padding: 65px 15px 40px;
       text-align: center;
-    }
+      margin: 0 !important;
+    }}
 
-    .recipe-header h1 {
+    .recipe-header h1 {{
       font-family: 'Playfair Display', serif;
       font-size: 2.6rem;
       margin-bottom: 12px;
       color: #f7e7ce;
-    }
+    }}
 
-    .recipe-header p {
+    .recipe-header p {{
       font-size: 1.08rem;
       max-width: 680px;
       margin: 0 auto 24px;
       color: #d1d5db;
       line-height: 1.6;
-    }
+    }}
 
-    .filter-container {
+    .filter-container {{
       display: flex;
       justify-content: center;
       gap: 8px;
       flex-wrap: wrap;
       max-width: 800px;
       margin: 0 auto;
-    }
+    }}
 
-    .filter-btn {
+    .filter-btn {{
       background: rgba(255,255,255,0.1);
       color: white;
       border: 1px solid rgba(255,255,255,0.25);
@@ -389,28 +392,28 @@ def generate_html(lang):
       font-weight: 600;
       font-size: 0.88rem;
       transition: all 0.3s ease;
-    }
+    }}
 
-    .filter-btn.active, .filter-btn:hover {
+    .filter-btn.active, .filter-btn:hover {{
       background: var(--primary-gold);
       color: #122017;
       border-color: var(--primary-gold);
-    }
+    }}
 
-    /* MƏRKƏZLƏŞDİRİLMİŞ QUTU */
-    .recipes-container {
-      width: 100%;
+    /* DESKTOP & MOBIL DƏQİQ DÜZƏLİŞ */
+    .recipes-container {{
+      width: 100% !important;
       max-width: 1200px;
-      margin: 35px auto 60px;
-      padding: 0 20px;
+      margin: 30px auto 60px !important;
+      padding: 0 15px !important;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-      gap: 30px;
-    }
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 25px;
+    }}
 
-    .recipe-card {
-      width: 100%;
-      max-width: 100%;
+    .recipe-card {{
+      width: 100% !important;
+      max-width: 100% !important;
       background: var(--card-bg);
       border-radius: 18px;
       overflow: hidden;
@@ -418,39 +421,39 @@ def generate_html(lang):
       border: 1px solid var(--border-soft);
       display: flex;
       flex-direction: column;
-      transition: transform 0.3s ease;
-    }
+      margin: 0 !important;
+    }}
 
-    .recipe-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .swiper {
+    .swiper {{
       width: 100% !important;
       max-width: 100% !important;
       height: 250px;
       overflow: hidden;
-    }
+      margin: 0 !important;
+      padding: 0 !important;
+    }}
 
-    .swiper-slide {
+    .swiper-slide {{
       width: 100% !important;
-    }
+      margin: 0 !important;
+      padding: 0 !important;
+    }}
 
-    .swiper-slide img {
+    .swiper-slide img {{
       width: 100% !important;
       height: 100% !important;
       object-fit: cover !important;
       display: block;
-    }
+    }}
 
-    .recipe-body {
-      padding: 24px 20px;
+    .recipe-body {{
+      padding: 22px 18px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-    }
+    }}
 
-    .badge-category {
+    .badge-category {{
       align-self: flex-start;
       background: #f0e6d6;
       color: #8c6828;
@@ -460,17 +463,17 @@ def generate_html(lang):
       padding: 4px 10px;
       border-radius: 15px;
       margin-bottom: 10px;
-    }
+    }}
 
-    .recipe-title {
+    .recipe-title {{
       font-family: 'Playfair Display', serif;
       font-size: 1.5rem;
       margin: 0 0 10px;
       color: var(--primary-dark);
       line-height: 1.3;
-    }
+    }}
 
-    .meta-tags {
+    .meta-tags {{
       display: flex;
       gap: 12px;
       font-size: 0.85rem;
@@ -479,9 +482,9 @@ def generate_html(lang):
       padding-bottom: 12px;
       border-bottom: 1px dashed #e2e8f0;
       flex-wrap: wrap;
-    }
+    }}
 
-    .savor-highlight {
+    .savor-highlight {{
       background: #fbf6ee;
       border-left: 4px solid var(--primary-gold);
       padding: 10px 14px;
@@ -493,179 +496,172 @@ def generate_html(lang):
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
+    }}
 
-    .savor-highlight a {
+    .savor-highlight a {{
       color: #8c6828;
       text-decoration: underline;
       font-weight: 700;
       font-size: 0.82rem;
-    }
+    }}
 
-    .section-subtitle {
+    .section-subtitle {{
       font-size: 0.94rem;
       font-weight: 700;
       color: var(--primary-dark);
       margin: 10px 0 6px;
-    }
+    }}
 
-    .ingredients-list {
+    .ingredients-list {{
       list-style: none;
       padding: 0;
       margin: 0 0 14px;
-    }
+    }}
 
-    .ingredients-list li {
+    .ingredients-list li {{
       padding: 4px 0;
       font-size: 0.88rem;
       color: #4a5568;
-    }
+    }}
 
-    .ingredients-list label {
+    .ingredients-list label {{
       display: flex;
       align-items: center;
       gap: 8px;
       cursor: pointer;
-    }
+    }}
 
-    .ingredients-list input[type="checkbox"] {
+    .ingredients-list input[type="checkbox"] {{
       accent-color: var(--primary-gold);
       width: 16px;
       height: 16px;
-    }
+    }}
 
-    .ingredients-list input[type="checkbox"]:checked + span {
+    .ingredients-list input[type="checkbox"]:checked + span {{
       text-decoration: line-through;
       color: #a0aec0;
-    }
+    }}
 
-    .steps-list {
+    .steps-list {{
       padding-left: 16px;
       margin: 0 0 10px;
       font-size: 0.86rem;
       color: #4a5568;
       line-height: 1.5;
-    }
+    }}
 
-    .steps-list li {
+    .steps-list li {{
       margin-bottom: 5px;
-    }
+    }}
 
-    /* MOBİL DƏQİQ MƏRKƏZLƏŞDİRMƏ */
-    @media (max-width: 768px) {
-      .recipe-header {
-        padding: 45px 16px 30px;
-      }
-      .recipe-header h1 {
-        font-size: 2rem;
-      }
-      .recipe-header p {
-        font-size: 0.95rem;
-        margin-bottom: 18px;
-      }
-      .filter-btn {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-      }
-      .recipes-container {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 0 16px !important;
-        margin: 20px auto 45px !important;
-        gap: 20px !important;
-        width: 100% !important;
-      }
-      .recipe-card {
+    /* MOBİL DƏQİQ SIFIRLAMA (SOL BOŞLUQSUZ VƏ MƏRKƏZLİ) */
+    @media (max-width: 768px) {{
+      .nav-bar-top {{
+        padding: 12px 12px !important;
+      }}
+      .nav-brand {{
+        display: none !important;
+      }}
+      .recipe-header {{
+        padding: 40px 10px 25px !important;
+      }}
+      .recipe-header h1 {{
+        font-size: 1.9rem !important;
+      }}
+      .recipes-container {{
         width: 100% !important;
         max-width: 100% !important;
-        border-radius: 16px;
-      }
-      .swiper {
+        margin: 15px 0 40px 0 !important;
+        padding: 0 8px !important; /* Sol və sağ bərabər minimal 8px */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+      }}
+      .recipe-card {{
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        border-radius: 14px !important;
+      }}
+      .swiper {{
         height: 220px !important;
-      }
-      .recipe-body {
-        padding: 18px 14px !important;
-      }
-    }
+      }}
+      .recipe-body {{
+        padding: 16px 12px !important;
+      }}
+    }}
 
     /* Savor Footer */
-    .savor-footer {
+    .savor-footer {{
       width: 100%;
       background-color: #120e0b;
       color: #d1c7bc;
       padding: 55px 20px 25px;
       font-family: 'Plus Jakarta Sans', sans-serif;
       margin-top: 50px;
-    }
+    }}
 
-    .footer-top {
+    .footer-top {{
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.4fr 1fr 1fr 1fr;
       gap: 35px;
       padding-bottom: 35px;
-    }
+    }}
 
-    @media (max-width: 820px) {
-      .footer-top {
+    @media (max-width: 820px) {{
+      .footer-top {{
         grid-template-columns: 1fr;
         gap: 25px;
-      }
-      .nav-bar-top {
-        padding: 12px 16px;
-      }
-      .nav-brand {
-        display: none;
-      }
-    }
+      }}
+    }}
 
-    .footer-logo {
+    .footer-logo {{
       font-size: 2.4rem;
       font-weight: 800;
       color: #c57b2e;
       letter-spacing: 2px;
       margin-bottom: 12px;
-    }
+    }}
 
-    .brand-col p {
+    .brand-col p {{
       color: #8f8579;
       font-size: 0.92rem;
       line-height: 1.5;
-    }
+    }}
 
-    .footer-col h4 {
+    .footer-col h4 {{
       color: #c57b2e;
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 1.5px;
       margin: 0 0 15px;
       text-transform: uppercase;
-    }
+    }}
 
-    .footer-col ul {
+    .footer-col ul {{
       list-style: none;
       padding: 0;
       margin: 0;
-    }
+    }}
 
-    .footer-col ul li {
+    .footer-col ul li {{
       margin-bottom: 10px;
       font-size: 0.92rem;
-    }
+    }}
 
-    .footer-col ul li a, .footer-col ul li span {
+    .footer-col ul li a, .footer-col ul li span {{
       color: #e5ded6;
       text-decoration: none;
       transition: color 0.2s ease;
-    }
+    }}
 
-    .footer-col ul li a:hover {
+    .footer-col ul li a:hover {{
       color: #c57b2e;
-    }
+    }}
 
-    .footer-bottom {
+    .footer-bottom {{
       max-width: 1200px;
       margin: 0 auto;
       padding-top: 20px;
@@ -677,10 +673,10 @@ def generate_html(lang):
       color: #7d7367;
       flex-wrap: wrap;
       gap: 12px;
-    }
+    }}
 
     /* Floating WhatsApp Button */
-    .floating-wa {
+    .floating-wa {{
       position: fixed !important;
       bottom: 25px !important;
       right: 25px !important;
@@ -696,19 +692,19 @@ def generate_html(lang):
       text-decoration: none !important;
       z-index: 999999 !important;
       transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    }
+    }}
 
-    .floating-wa:hover {
+    .floating-wa:hover {{
       transform: scale(1.1) !important;
       box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6) !important;
-    }
+    }}
 
-    .floating-wa svg {
+    .floating-wa svg {{
       width: 30px !important;
       height: 30px !important;
       fill: #ffffff !important;
       display: block !important;
-    }
+    }}
   </style>
 </head>
 <body>
@@ -832,4 +828,4 @@ with open("recipes/ru.html", "w", encoding="utf-8") as f:
 with open("recipes/en.html", "w", encoding="utf-8") as f:
     f.write(generate_html("en"))
 
-print("✓ Dəqiq dil keçidləri və WhatsApp loqoları uğurla yeniləndi!")
+print("✓ Reseptlər tam sol boşluqsuz və ekranın eninə simmetrik düzəldildi!")
