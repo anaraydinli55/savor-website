@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kulinariya & Reseptlər | Savor Kərə Yağları & Ghee</title>
-  <meta name="description" content="Savor kərə yağı və Ghee ilə hazırlanan ən dadlı Azərbaycan milli mətbəxi və şirniyyat reseptləri.">
+  <title>Кулинария & Рецепты | Сливочное Масло & Гхи Savor</title>
+  <meta name="description" content="Самые вкусные рецепты азербайджанской и мировой кухни со сливочным маслом и Гхи Savor.">
   
   <!-- Swiper.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -410,29 +410,29 @@
 
   <!-- 3 Dilli Naviqasiya Paneli -->
   <header class="nav-bar-top">
-    <a href="../index.html" class="nav-back">← Ana Səhifə</a>
+    <a href="../index.php?lang=ru.html" class="nav-back">← Главная Страница</a>
     <span class="nav-brand">SAVOR</span>
     <div class="nav-right">
       <div class="lang-switch">
-        <a href="index.html" class="active">AZ</a>
-        <a href="ru.html" >RU</a>
+        <a href="index.html" >AZ</a>
+        <a href="ru.html" class="active">RU</a>
         <a href="en.html" >EN</a>
       </div>
-      <a href="../contact.php?lang=az.html" class="btn-order">Sifariş et</a>
+      <a href="../contact.php?lang=ru.html" class="btn-order">Заказать</a>
     </div>
   </header>
 
   <!-- Başlıq və Filterlər -->
   <section class="recipe-header">
-    <h1>Savor Kulinariya Reseptləri</h1>
-    <p>100% təbii Savor kərə yağları və ətirli Ghee ilə hazırlanan, süfrənizin bəzəyi olacaq ən dadlı milli yeməklər, şirniyyatlar və incə desertlər.</p>
+    <h1>Кулинарные Рецепты Savor</h1>
+    <p>Вкуснейшие национальные блюда, выпечка и изысканные десерты, приготовленные на 100% натуральном масле и ароматном Гхи Savor.</p>
     
     <div class="filter-container">
-      <button class="filter-btn active" onclick="filterRecipes('all')">Bütün Reseptlər (9)</button>
-      <button class="filter-btn" onclick="filterRecipes('milli')">Milli Yeməklər</button>
-      <button class="filter-btn" onclick="filterRecipes('seher')">Səhər Təamları</button>
-      <button class="filter-btn" onclick="filterRecipes('sirniyyat')">Milli Şirniyyatlar</button>
-      <button class="filter-btn" onclick="filterRecipes('tort')">Tortlar & Desertlər</button>
+      <button class="filter-btn active" onclick="filterRecipes('all')">Все Рецепты (9)</button>
+      <button class="filter-btn" onclick="filterRecipes('milli')">Национальные Блюда</button>
+      <button class="filter-btn" onclick="filterRecipes('seher')">Завтраки</button>
+      <button class="filter-btn" onclick="filterRecipes('sirniyyat')">Восточные Сладости</button>
+      <button class="filter-btn" onclick="filterRecipes('tort')">Торты & Десерты</button>
     </div>
   </section>
 
@@ -457,20 +457,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Milli Təamlar</span>
-        <h2 class="recipe-title">Əsl Zəfəranlı Şah Plov</h2>
-        <div class="meta-tags"><span>⏱️ 120 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 6-8 nəfərlik</span></div>
+        <span class="badge-category">Национальные Блюда</span>
+        <h2 class="recipe-title">Шах Плов с Шафраном</h2>
+        <div class="meta-tags"><span>⏱️ 120 мин</span><span>👨‍🍳 Сложность: Средняя</span><span>🍽️ 6-8 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Ghee (150q)</span>
-          <a href="../product.php?slug=ghee-600g&lang=az.html">Məhsula bax →</a>
+          <span>🧈 Savor Ghee (150г)</span>
+          <a href="../product.php?slug=ghee-600g&lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>150q Savor Ghee (əridilmiş kərə yağı)</span></label></li><li><label><input type="checkbox"> <span>3 stəkan basmati düyü</span></label></li><li><label><input type="checkbox"> <span>600q quzu əti, qaysı və şabalıd</span></label></li><li><label><input type="checkbox"> <span>Lavaş və təbii zəfəran dəmləməsi</span></label></li>
+          <li><label><input type="checkbox"> <span>150г топленого масла Savor Ghee</span></label></li><li><label><input type="checkbox"> <span>3 стакана риса басмати</span></label></li><li><label><input type="checkbox"> <span>600г баранины, курага и каштаны</span></label></li><li><label><input type="checkbox"> <span>Лаваш и настой натурального шафрана</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Düyü süzülür, ət soğan və Savor Ghee ilə qovrulur.</li><li>Qazan Savor Ghee ilə yağlanır, lavaş düzülüb düyü və ət qat-qat yığılır.</li><li>180°C sobada 60 dəqiqə qızılı rəng alana qədər dəmə qoyulur.</li>
+          <li>Рис отваривается до полуготовности. Мясо обжаривается с луком на масле Savor Ghee.</li><li>Казан смазывается маслом Savor Ghee, выстилается лавашом, слоями выкладывается рис с мясом.</li><li>Запекается в духовке при 180°C около 60 минут до золотистой корочки.</li>
         </ol>
       </div>
     </article>
@@ -490,20 +490,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Milli Təamlar</span>
-        <h2 class="recipe-title">Səbzi Qovurma Plovu</h2>
-        <div class="meta-tags"><span>⏱️ 90 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 5-6 nəfərlik</span></div>
+        <span class="badge-category">Национальные Блюда</span>
+        <h2 class="recipe-title">Сябзи Говурма Плов</h2>
+        <div class="meta-tags"><span>⏱️ 90 мин</span><span>👨‍🍳 Сложность: Средняя</span><span>🍽️ 5-6 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (180q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (180г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>180q Savor Kərə Yağı</span></label></li><li><label><input type="checkbox"> <span>500q quzu əti və 2 baş soğan</span></label></li><li><label><input type="checkbox"> <span>Kəvər, keşniş, şüyüd, ispanaq, quzuqulağı</span></label></li><li><label><input type="checkbox"> <span>Limon suyu və ya abqora</span></label></li>
+          <li><label><input type="checkbox"> <span>180г сливочного масла Savor</span></label></li><li><label><input type="checkbox"> <span>500г мяса баранины и 2 луковицы</span></label></li><li><label><input type="checkbox"> <span>Праздничная зелень: кявяр, кинза, укроп, шпинат, щавель</span></label></li><li><label><input type="checkbox"> <span>Лимонный сок или абгора</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Ət qaynadılıb soğanla Savor kərə yağında qızardılır.</li><li>Göyərtilər iri doğranıb bol Savor kərə yağında zəif odda pörtlədilir.</li><li>Ət və göyərti birləşdirilib abqora əlavə olunur və zəfəranlı düyü ilə verilir.</li>
+          <li>Мясо отваривается и обжаривается с луком на сливочном масле Savor.</li><li>Зелень тушится на слабом огне в обильном количестве масла Savor.</li><li>Мясо соединяется с зеленью, заправляется абгорой и подается с шафрановым рисом.</li>
         </ol>
       </div>
     </article>
@@ -523,20 +523,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Səhər Təamı</span>
-        <h2 class="recipe-title">Kərə Yağlı Pomidor-Yumurta</h2>
-        <div class="meta-tags"><span>⏱️ 20 dəq</span><span>👨‍🍳 Çətinlik: Asan</span><span>🍽️ 2-3 nəfərlik</span></div>
+        <span class="badge-category">Завтрак</span>
+        <h2 class="recipe-title">Помидор-Юмурта на Масле</h2>
+        <div class="meta-tags"><span>⏱️ 20 мин</span><span>👨‍🍳 Сложность: Легко</span><span>🍽️ 2-3 порции</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (80q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (80г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>80q təbii Savor Kərə Yağı</span></label></li><li><label><input type="checkbox"> <span>4 ədəd sulu Zirə pomidoru</span></label></li><li><label><input type="checkbox"> <span>4 ədəd kənd yumurtası</span></label></li><li><label><input type="checkbox"> <span>Duz və təzə çəkilmiş istiot</span></label></li>
+          <li><label><input type="checkbox"> <span>80г натурального сливочного масла Savor</span></label></li><li><label><input type="checkbox"> <span>4 сочных помидора Зиря</span></label></li><li><label><input type="checkbox"> <span>4 деревенских яйца</span></label></li><li><label><input type="checkbox"> <span>Соль и свежемолотый перец</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Pomidorlar xırda doğranıb tavada öz suyunu çəkənə qədər bişirilir.</li><li>Bol Savor kərə yağı əlavə olunub qızardılır, yumurtalar vurulub qaynar təndir çörəyi ilə təqdim edilir.</li>
+          <li>Помидоры нарезаются и тушатся в сковороде до испарения влаги.</li><li>Добавляется щедрая порция масла Savor, вбиваются яйца и подается с горячим хлебом.</li>
         </ol>
       </div>
     </article>
@@ -556,20 +556,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Milli Şirniyyat</span>
-        <h2 class="recipe-title">Klassik Bakı Paxlavası</h2>
-        <div class="meta-tags"><span>⏱️ 90 dəq</span><span>👨‍🍳 Çətinlik: Usta</span><span>🍽️ 12-15 nəfərlik</span></div>
+        <span class="badge-category">Сладости</span>
+        <h2 class="recipe-title">Бакинская Пахлава</h2>
+        <div class="meta-tags"><span>⏱️ 90 мин</span><span>👨‍🍳 Сложность: Мастер</span><span>🍽️ 12-15 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (300q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (300г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>300q əridilmiş Savor Kərə Yağı</span></label></li><li><label><input type="checkbox"> <span>1 kq əla növ un və 3 yumurta</span></label></li><li><label><input type="checkbox"> <span>500q qoz ləpəsi və 500q şəkər tozu</span></label></li><li><label><input type="checkbox"> <span>Hil və zəfəran şərbəti</span></label></li>
+          <li><label><input type="checkbox"> <span>300г растопленного сливочного масла Savor</span></label></li><li><label><input type="checkbox"> <span>1 кг муки высшего сорта и 3 яйца</span></label></li><li><label><input type="checkbox"> <span>500г грецких орехов и 500г сахара</span></label></li><li><label><input type="checkbox"> <span>Кардамон и шафрановый сироп</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Xəmir nazik yayılır, aralarına bol Savor kərə yağı çəkilir və içlik səpilir.</li><li>Romb kəsilib 180°C sobada qızardılır və qaynar şərbət tökülür.</li>
+          <li>Тесто раскатывается тончайшими слоями, смазывается маслом Savor и посыпается начинкой.</li><li>Нарезается ромбиками, выпекается при 180°C и заливается горячим сиропом.</li>
         </ol>
       </div>
     </article>
@@ -589,20 +589,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Milli Şirniyyat</span>
-        <h2 class="recipe-title">Zərif Qat-qat Badambura</h2>
-        <div class="meta-tags"><span>⏱️ 80 dəq</span><span>👨‍🍳 Çətinlik: Usta</span><span>🍽️ 10-12 nəfərlik</span></div>
+        <span class="badge-category">Сладости</span>
+        <h2 class="recipe-title">Нежная Слоеная Бадамбура</h2>
+        <div class="meta-tags"><span>⏱️ 80 мин</span><span>👨‍🍳 Сложность: Мастер</span><span>🍽️ 10-12 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (250q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (250г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>250q ilıq Savor Kərə Yağı (qatlar üçün)</span></label></li><li><label><input type="checkbox"> <span>700q un, 200ml süd və 1 yumurta</span></label></li><li><label><input type="checkbox"> <span>300q üyüdülmüş təmiz badam və şəkər</span></label></li><li><label><input type="checkbox"> <span>Üyüdülmüş hil və vanil</span></label></li>
+          <li><label><input type="checkbox"> <span>250г теплого масла Savor (для слоев)</span></label></li><li><label><input type="checkbox"> <span>700г муки, 200мл молока и 1 яйцо</span></label></li><li><label><input type="checkbox"> <span>300г очищенного молотого миндаля и сахар</span></label></li><li><label><input type="checkbox"> <span>Молотый кардамон и ваниль</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Xəmirlər nazik yayılıb aralarına Savor kərə yağı sürtülərək üst-üstə yığılır və rulet bükülür.</li><li>Rulet kəsilib içi açılır, badam içliyi qoyulub bükülür və 160°C sobada ağappaq bişirilir.</li>
+          <li>Слои теста обильно смазываются маслом Savor, сворачиваются в рулет.</li><li>Формируются бадамбура с миндальной начинкой и выпекаются при 160°C до белоснежного цвета.</li>
         </ol>
       </div>
     </article>
@@ -622,20 +622,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Milli Şirniyyat</span>
-        <h2 class="recipe-title">Əsl Qarabağ Kətəsi</h2>
-        <div class="meta-tags"><span>⏱️ 60 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 8 nəfərlik</span></div>
+        <span class="badge-category">Сладости</span>
+        <h2 class="recipe-title">Карабахская Кята</h2>
+        <div class="meta-tags"><span>⏱️ 60 мин</span><span>👨‍🍳 Сложность: Средняя</span><span>🍽️ 8 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (200q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (200г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>200q soyudulmuş Savor Kərə Yağı (İçlik üçün)</span></label></li><li><label><input type="checkbox"> <span>500q un, 150q şəkər tozu və vanil</span></label></li><li><label><input type="checkbox"> <span>Xəmir üçün: 400q un, 150q xama və maya</span></label></li>
+          <li><label><input type="checkbox"> <span>200г охлажденного сливочного масла Savor (для начинки)</span></label></li><li><label><input type="checkbox"> <span>500г муки, 150г сахарной пудры и ваниль</span></label></li><li><label><input type="checkbox"> <span>Тесто: 400г муки, 150г сметаны и дрожжи</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>İçlik (xoruz): Savor kərə yağı un və şəkərlə ovulub qum halına gətirilir.</li><li>Xəmir yayılır, içinə bol kərə yağlı içlik qoyulub dairəvi bükülür, çəngəllə naxış vurulub 180°C sobada qızardılır.</li>
+          <li>Начинка: масло Savor перетирается с мукой и сахаром в нежную крошку.</li><li>Тесто раскатывается, начиняется, формуется круг с узором вилкой и выпекается до румянца.</li>
         </ol>
       </div>
     </article>
@@ -657,20 +657,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Tort & Desert</span>
-        <h2 class="recipe-title">Xırtıldayan Napoleon Tortu</h2>
-        <div class="meta-tags"><span>⏱️ 80 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 8-10 nəfərlik</span></div>
+        <span class="badge-category">Торты & Десерты</span>
+        <h2 class="recipe-title">Хрустящий Торт Наполеон</h2>
+        <div class="meta-tags"><span>⏱️ 80 мин</span><span>👨‍🍳 Сложность: Средняя</span><span>🍽️ 8-10 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (350q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (350г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>350q dondurulmuş Savor Kərə Yağı</span></label></li><li><label><input type="checkbox"> <span>450q un, buzlu su və sirkə</span></label></li><li><label><input type="checkbox"> <span>Krem: 200q Savor yağı və qatılaşdırılmış süd</span></label></li>
+          <li><label><input type="checkbox"> <span>350г замороженного сливочного масла Savor</span></label></li><li><label><input type="checkbox"> <span>450г муки, ледяная вода и уксус</span></label></li><li><label><input type="checkbox"> <span>Крем: 200г сливочного масла Savor и сгущенное молоко</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Kərə yağı unla sürtgəcdən keçirilir, yoğrulub 10 korj şəklində bişirilir.</li><li>Kərə yağı kremi ilə korjlar yağlanıb xırdalanmış qırıntılarla örtülür.</li>
+          <li>Масло натирается с мукой, замешивается слоеное тесто и выпекаются 10 коржей.</li><li>Коржи промазываются пышным кремом из масла Savor и посыпаются крошкой.</li>
         </ol>
       </div>
     </article>
@@ -692,20 +692,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Tort & Desert</span>
-        <h2 class="recipe-title">Klassik Ballı Tort (Medovik)</h2>
-        <div class="meta-tags"><span>⏱️ 75 dəq</span><span>👨‍🍳 Çətinlik: Orta</span><span>🍽️ 10-12 nəfərlik</span></div>
+        <span class="badge-category">Торты & Десерты</span>
+        <h2 class="recipe-title">Классический Медовик</h2>
+        <div class="meta-tags"><span>⏱️ 75 мин</span><span>👨‍🍳 Сложность: Средняя</span><span>🍽️ 10-12 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (200q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (200г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>100q Savor Kərə Yağı (xəmir) + 150q (krem)</span></label></li><li><label><input type="checkbox"> <span>3 x.q. təbii bal və 1 st şəkər tozu</span></label></li><li><label><input type="checkbox"> <span>3 yumurta, 1 ç.q. soda və 400q un</span></label></li><li><label><input type="checkbox"> <span>Krem: Bişmiş qatılaşdırılmış süd və xama</span></label></li>
+          <li><label><input type="checkbox"> <span>100г масла Savor (тесто) + 150г (крем)</span></label></li><li><label><input type="checkbox"> <span>3 ст.л. натурального меда и 1 стакан сахара</span></label></li><li><label><input type="checkbox"> <span>3 яйца, 1 ч.л. соды и 400г муки</span></label></li><li><label><input type="checkbox"> <span>Крем: Вареная сгущенка и сметана</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Bal, şəkər və Savor yağı buxar vannasında əridilib soda əlavə edilir və xəmir yoğrulur.</li><li>8 nazik qat bişirilir və zərif Savor kərə yağlı kremlə birləşdirilir.</li>
+          <li>Мед, сахар и масло Savor прогреваются на водяной бане с содой.</li><li>Выпекаются 8 коржей и пропитываются нежнейшим кремом.</li>
         </ol>
       </div>
     </article>
@@ -722,20 +722,20 @@
         <div class="swiper-button-prev"></div>
       </div>
       <div class="recipe-body">
-        <span class="badge-category">Desert</span>
-        <h2 class="recipe-title">Zəngin Şokoladlı Brauni</h2>
-        <div class="meta-tags"><span>⏱️ 35 dəq</span><span>👨‍🍳 Çətinlik: Asan</span><span>🍽️ 6-8 nəfərlik</span></div>
+        <span class="badge-category">Десерты</span>
+        <h2 class="recipe-title">Насыщенный Шоколадный Брауни</h2>
+        <div class="meta-tags"><span>⏱️ 35 мин</span><span>👨‍🍳 Сложность: Легко</span><span>🍽️ 6-8 порций</span></div>
         <div class="savor-highlight">
-          <span>🧈 Savor Kərə Yağı (180q)</span>
-          <a href="../products.php?lang=az.html">Məhsula bax →</a>
+          <span>🧈 Масло Savor (180г)</span>
+          <a href="../products.php?lang=ru.html">О продукте →</a>
         </div>
-        <div class="section-subtitle">🛒 Tərkibi:</div>
+        <div class="section-subtitle">🛒 Ингредиенты:</div>
         <ul class="ingredients-list">
-          <li><label><input type="checkbox"> <span>180q keyfiyyətli Savor Kərə Yağı</span></label></li><li><label><input type="checkbox"> <span>200q tünd qara şokolad (70%)</span></label></li><li><label><input type="checkbox"> <span>3 yumurta və 150q qəhvəyi şəkər</span></label></li><li><label><input type="checkbox"> <span>100q un və 30q kakao tozu</span></label></li>
+          <li><label><input type="checkbox"> <span>180г премиального масла Savor</span></label></li><li><label><input type="checkbox"> <span>200г темного шоколада (70%)</span></label></li><li><label><input type="checkbox"> <span>3 яйца и 150г тростникового сахара</span></label></li><li><label><input type="checkbox"> <span>100г муки и 30г какао-порошка</span></label></li>
         </ul>
-        <div class="section-subtitle">👨‍🍳 Hazırlanması:</div>
+        <div class="section-subtitle">👨‍🍳 Приготовление:</div>
         <ol class="steps-list">
-          <li>Savor kərə yağı şokoladla birlikdə əridilir və ilıdılır.</li><li>Yumurta və şəkər çalınır, şokoladlı kərə yağı qarışığı və un əlavə olunub 175°C sobada 22-25 dəqiqə bişirilir.</li>
+          <li>Масло Savor растапливается вместе с шоколадом.</li><li>Яйца взбиваются с сахаром, смешиваются с шоколадным маслом и выпекаются при 175°C 22-25 минут.</li>
         </ol>
       </div>
     </article>
@@ -746,10 +746,10 @@
     <div class="footer-top">
       <div class="footer-col brand-col">
         <div class="footer-logo">SAVOR</div>
-        <p>Təbii xammaldan premium yağ məhsulları.<br>Pərakəndə və HORECA üçün istehsal.</p>
+        <p>Премиальная масляная продукция из натурального сырья.<br>Производство для розницы и HORECA.</p>
       </div>
       <div class="footer-col">
-        <h4>ƏLAQƏ</h4>
+        <h4>КОНТАКТЫ</h4>
         <ul>
           <li><a href="tel:+994775759555">+994 77 575 95 55</a></li>
           <li><a href="tel:+994517225511">+994 51 722 55 11</a></li>
@@ -758,25 +758,25 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>MƏHSULLAR</h4>
+        <h4>ПРОДУКЦИЯ</h4>
         <ul>
-          <li><a href="../product.php?slug=ghee-600g&lang=az.html">SAVOR Ghee 600 q</a></li>
-          <li><a href="../product.php?slug=horeca-20kg&lang=az.html">SAVOR HORECA 20 kq</a></li>
-          <li><a href="../production.php?lang=az.html">İstehsal</a></li>
+          <li><a href="../product.php?slug=ghee-600g&lang=ru.html">SAVOR Ghee 600 г</a></li>
+          <li><a href="../product.php?slug=horeca-20kg&lang=ru.html">SAVOR HORECA 20 кг</a></li>
+          <li><a href="../production.php?lang=ru.html">Производство</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>SERTİFİKATLAR</h4>
+        <h4>СЕРТИФИКАТЫ</h4>
         <ul>
-          <li><a href="../certificates.php?lang=az.html">Bütün sənədlər</a></li>
-          <li><a href="../blog.php?lang=az.html">Bütün məqalələr</a></li>
-          <li><a href="../horeca.php?lang=az.html">Topdan sifariş</a></li>
+          <li><a href="../certificates.php?lang=ru.html">Все документы</a></li>
+          <li><a href="../blog.php?lang=ru.html">Все статьи</a></li>
+          <li><a href="../horeca.php?lang=ru.html">Оптовый заказ</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 SAVOR. Bütün hüquqlar qorunur.</div>
-      <div class="footer-motto">Keyfiyyət • Şəffaflıq • Stabil təchizat</div>
+      <div class="footer-copy">© 2026 SAVOR. Все права защищены.</div>
+      <div class="footer-motto">Качество • Прозрачность • Стабильные поставки</div>
     </div>
   </footer>
 
