@@ -388,7 +388,60 @@ def generate_html(lang):
       transform: translateY(-2px);
     }}
 
-    .recipes-container {{
+    /* Updated Grid */
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    .recipes-container {
+      max-width: 1240px;
+      margin: 35px auto 60px;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .recipe-header {
+        padding: 50px 15px 35px;
+      }
+      .recipe-header h1 {
+        font-size: 2.1rem;
+      }
+      .recipe-header p {
+        font-size: 0.98rem;
+        margin-bottom: 20px;
+      }
+      .recipes-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 25px;
+        margin: 25px auto 50px;
+      }
+      .recipe-card {
+        width: 100%;
+      }
+      .swiper {
+        height: 230px;
+      }
+      .recipe-body {
+        padding: 20px 16px;
+      }
+      .filter-btn {
+        padding: 7px 14px;
+        font-size: 0.84rem;
+      }
+    }
+
+    .old-grid-ignored {{
       max-width: 1260px;
       margin: 40px auto 70px;
       padding: 0 20px;
