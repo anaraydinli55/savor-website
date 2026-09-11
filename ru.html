@@ -48,6 +48,43 @@
   }
 </style>
 
+
+<style id="savor-header-lang-fix">
+  /* Mobil və Desktop üçün daimi aktiv dil seçimi */
+  .savor-nav-lang {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  .savor-nav-lang a {
+    color: #8c8275 !important;
+    text-decoration: none !important;
+    padding: 3px 6px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  .savor-nav-lang a.active, .savor-nav-lang a:hover {
+    color: #965627 !important;
+    background: rgba(150, 86, 39, 0.12) !important;
+  }
+  @media (max-width: 768px) {
+    .savor-nav-lang {
+      display: inline-flex !important;
+      gap: 6px;
+      font-size: 0.82rem;
+      margin: 0 6px;
+    }
+    .savor-nav-lang a {
+      padding: 2px 4px;
+    }
+  }
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="index.php%3Flang=ru.html#main">Məzmuna keç</a>
@@ -55,7 +92,12 @@
     <div class="header-inner">
         <a class="brand" href="index.php%3Flang=ru.html" aria-label="SAVOR ana səhifə"><img src="assets/img/logo-savor.png" width="1982" height="557" alt="SAVOR"></a>
         <nav class="desktop-nav" aria-label="Əsas menyu">
-            <a class="active" href="index.php%3Flang=ru.html">Главная</a><a class="" href="about.php%3Flang=ru.html">О нас</a><a class="" href="products.php%3Flang=ru.html">Продукция</a><a class="" href="production.php%3Flang=ru.html">Производство</a><a class="" href="horeca.php%3Flang=ru.html">HORECA</a><a class="" href="certificates.php%3Flang=ru.html">Сертификаты</a><a class="" href="blog.php%3Flang=ru.html">Блог</a><a class="" href="contact.php%3Flang=ru.html">Контакты</a>        </nav>
+            <a class="active" href="index.php%3Flang=ru.html">Главная</a><a class="" href="about.php%3Flang=ru.html">О нас</a><a class="" href="products.php%3Flang=ru.html">Продукция</a><a class="" href="production.php%3Flang=ru.html">Производство</a><a class="" href="horeca.php%3Flang=ru.html">HORECA</a><a class="" href="certificates.php%3Flang=ru.html">Сертификаты</a><a class="" href="blog.php%3Flang=ru.html">Блог</a><div class="savor-nav-lang">
+      <a href="/index.html" >AZ</a>
+      <a href="/ru.html" class="active">RU</a>
+      <a href="/en.html" >EN</a>
+    </div>
+        <a class="" href="contact.php%3Flang=ru.html">Контакты</a>        </nav>
         <div class="header-actions">
             <div class="lang-switch" aria-label="Dil seçimi">
                 <a class="" href="index.php%3Flang=az.html">AZ</a><a class="active" href="index.php%3Flang=ru.html">RU</a><a class="" href="index.php%3Flang=en.html">EN</a>            </div>
