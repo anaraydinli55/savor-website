@@ -18,7 +18,7 @@
       --primary-dark: #1f1d1a;
       --accent-brown: #965627;
       --bg-cream: #ece7e1;
-      --card-bg: #ffffff;
+      --card-bg: #faf8f5;
       --text-main: #1f1d1a;
       --text-muted: #6b665f;
       --border-soft: #ddd7cd;
@@ -33,7 +33,7 @@
     }
 
     .recipe-header {
-      background: linear-gradient(rgba(18, 32, 23, 0.88), rgba(18, 32, 23, 0.95)), url('https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg') center/cover;
+      background: linear-gradient(rgba(31, 29, 26, 0.88), rgba(31, 29, 26, 0.95)), url('https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg') center/cover;
       color: white;
       padding: 85px 20px 50px;
       text-align: center;
@@ -91,19 +91,19 @@
     }
 
     .recipe-card {
-      background: #faf8f5; border: 1px solid var(--border-soft);
+      background: var(--card-bg);
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       transition: all 0.4s ease;
       display: flex;
       flex-direction: column;
-      border: 1px solid rgba(0,0,0,0.05);
+      border: 1px solid var(--border-soft);
     }
 
     .recipe-card:hover {
       transform: translateY(-7px);
-      box-shadow: 0 20px 45px rgba(18, 32, 23, 0.12);
+      box-shadow: 0 20px 45px rgba(31, 29, 26, 0.12);
     }
 
     .swiper {
@@ -344,12 +344,13 @@
   <!-- Reseptlər Grid -->
   <main class="recipes-container">
 
-    <!-- 1. ŞAH PLOV (Mövcud 2 + 5 Yeni = 7 Şəkil) -->
+    <!-- 1. ŞAH PLOV (savor21.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="milli">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg" alt="Azərbaycan Şah Plovu"></div>
           <div class="swiper-slide"><img src="https://b7x9kq.arazmarket.az/storage/blog/sah-plov-2-edited.png" alt="Qazmaqlı Şah Plov"></div>
+          <div class="swiper-slide"><img src="../images/savor21.jpeg" alt="Savor Şah Plov"></div>
           <div class="swiper-slide"><img src="https://tse1.mm.bing.net/th/id/OIP.12ML-y5wGvq2iqNEZG33cgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Şah Plov Süfrəsi"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/736x/e5/0f/79/e50f79edb5624b37b0202337d80517d5.jpg" alt="Qızılı Şah Plov Dilimi"></div>
           <div class="swiper-slide"><img src="https://www.rttotravel.com/templates/yootheme/cache/12/Maqluba-121dbb80.jpeg" alt="Ənənəvi Qazmaqlı Plov"></div>
@@ -384,12 +385,13 @@
       </div>
     </article>
 
-    <!-- 2. SƏBZİ QOVURMA PLOV (5 Yeni Şəkil) -->
+    <!-- 2. SƏBZİ QOVURMA PLOV (savor22.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="milli">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/Vitaminl%C9%99-Z%C9%99ngin-S%C9%99bzi-Qovurma-Plov6-1170x650.jpg" alt="Milli Səbzi Qovurma"></div>
           <div class="swiper-slide"><img src="https://thumbs.dreamstime.com/b/pilau-green-plate-beef-pilaf-traditional-asian-dish-plov-also-known-as-polow-pilav-pallao-pulao-palaw-azerbaijanian-rice-365793055.jpg?w=992" alt="Səbzi Plov Təqdimatı"></div>
+          <div class="swiper-slide"><img src="../images/savor22.jpeg" alt="Savor Səbzi Qovurma"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/lMxDAstrUtA/maxresdefault.jpg" alt="Səbzi Qovurma Qazanda"></div>
           <div class="swiper-slide"><img src="https://sultanbasmati.az/images/receipt/2t4zbpoq.23m.jpg" alt="Sultan Səbzi Qovurma"></div>
           <div class="swiper-slide"><img src="https://blog.wego.com/wp-content/uploads/shutterstock_1165362130.jpg" alt="Səbzi Plov Düyü"></div>
@@ -422,12 +424,13 @@
       </div>
     </article>
 
-    <!-- 3. KƏRƏ YAĞLI POMİDOR-YUMURTA (5 Yeni Şəkil) -->
+    <!-- 3. KƏRƏ YAĞLI POMİDOR-YUMURTA (savor23.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="seher">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th/id/OIP.d-ySK5XCpMNioVi8TtGLBwHaGK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tavada Pomidor Yumurta"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/originals/3a/31/1b/3a311be0acebf94557b1a3f02a2f7062.jpg" alt="Bol Kərə Yağlı Pomidor Çığırtması"></div>
+          <div class="swiper-slide"><img src="../images/savor23.jpeg" alt="Savor Pomidor Yumurta"></div>
           <div class="swiper-slide"><img src="https://thespanishradish.com/wp-content/uploads/2022/03/pisto-square-v2-2k.jpg" alt="Pomidor Yumurta Süfrəsi"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b8/e8/4b/b8e84b3efa8c828a2746106a4635f708.jpg" alt="Kərə Yağlı Menemen Çığırtma"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/kKbLU7lWQiw/maxresdefault.jpg" alt="Milli Pomidor Yumurta Qaynar"></div>
@@ -459,12 +462,13 @@
       </div>
     </article>
 
-    <!-- 4. BAKI PAXLAVASI (5 Yeni Unikal Şəkil) -->
+    <!-- 4. BAKI PAXLAVASI (savor24.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://th.bing.com/th/id/R.3fe4ab8faeb256d59668b5c591bf3cc5?rik=IWUa2iTmC%2bukxA&riu=http%3a%2f%2fazerbejdzan.eu%2fwp-content%2fuploads%2f2021%2f06%2fBaki-paxlavasi-1.jpg&ehk=J8imnKUsapvDHE787gWD3X1v1QNA7nguN1LPnZHyELg%3d&risl=&pid=ImgRaw&r=0" alt="Əsl Bakı Paxlavası"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/736x/08/db/9e/08db9ede7c216b41a5f2d97f9cdd6159.jpg" alt="Qozlu Paxlava Tepsisi"></div>
+          <div class="swiper-slide"><img src="../images/savor24.jpeg" alt="Savor Bakı Paxlavası"></div>
           <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th/id/OIP.PVAMgkaBLfda_9eWwX_Q7gHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Klassik Paxlava Dilimləri"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/originals/b3/86/29/b3862943d0ebe30b1f56ae21620570e9.jpg" alt="Qızılı Paxlava"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/yrRYQ0y_D5o/hqdefault.jpg" alt="Paxlava Şərbətli"></div>
@@ -496,12 +500,13 @@
       </div>
     </article>
 
-    <!-- 5. ZƏRİF BADAMBURA (5 Yeni Şəkil) -->
+    <!-- 5. ZƏRİF BADAMBURA (savor25.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th/id/OIP.dzTksqIsZrDk4ET_1uw3UAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Milli Badambura"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/nUjHcgsjQk4/maxresdefault.jpg" alt="Qat-qat Badambura Xəmiri"></div>
+          <div class="swiper-slide"><img src="../images/savor25.jpeg" alt="Savor Badambura"></div>
           <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/3ZjwLmvMeDJu57eQUtqvoIodzrxh_DlQImTo8UEXYOMHoxT9mgxZasPxYr7Z3HFshnz7gTKineY21l2AgtyM-EvArpmh6x4egX2AH60=w900" alt="Badambura Təqdimatı"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/cOlUh0kV2iw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgYShUMA8=&rs=AOn4CLBsrrqmpj77hEoM61QDzgY08CNeNQ" alt="Zərif Badambura"></div>
           <div class="swiper-slide"><img src="https://tse2.mm.bing.net/th/id/OIP._iIigXmYUCvgeq10X5Rb-gHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Şəkər Kirşanlı Badambura"></div>
@@ -533,12 +538,13 @@
       </div>
     </article>
 
-    <!-- 6. ƏSL QARABAĞ KƏTƏSİ (5 Yeni Şəkil) -->
+    <!-- 6. ƏSL QARABAĞ KƏTƏSİ (savor26.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse2.mm.bing.net/th/id/OIP.YfkofR3kybLsKAZtvd0prAHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Əsl Qarabağ Kətəsi"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/U8pu1tb64Zc/maxresdefault.jpg" alt="Qarabağ Kətəsi Bişirilməsi"></div>
+          <div class="swiper-slide"><img src="../images/savor26.jpeg" alt="Savor Qarabağ Kətəsi"></div>
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/%C6%8Fsl-Qaraba%C4%9F-K%C9%99t%C9%99si1-1170x650.jpg" alt="Əsl Qarabağ Kətəsi Evdar"></div>
           <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1430987681/photo/traditional-turkish-pastries-pogaca-on-rustic-table-famous-bakery-product.jpg?s=170667a&w=0&k=20&c=rpEcFqVYH2sQid_wdTzG8sXg2VQlP5TsWiciXEpzDBw=" alt="Qızılı Kətə Xəmiri"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/bhJ9Sn4QBFQ/maxresdefault.jpg" alt="Qarabağ Kətəsi Təbii Yağla"></div>
@@ -569,12 +575,13 @@
       </div>
     </article>
 
-    <!-- 7. NAPOLEON TORTU (Mövcud 2 + 5 Yeni = 7 Şəkil) -->
+    <!-- 7. NAPOLEON TORTU (savor27.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://i.pinimg.com/originals/6b/63/b0/6b63b0078d3060fea68be6308d9be151.jpg" alt="Napoleon Tortu Resept.az"></div>
+          <div class="swiper-slide"><img src="https://resept.az/wp-content/uploads/resept/Napoleon_tortu_01_2.jpg" alt="Napoleon Tortu Resept.az"></div>
           <div class="swiper-slide"><img src="https://lent.az/storage/news/2025/november/06/big/690c5f471e90d690c5f471e90e1762418503690c5f471e90b690c5f471e90c.webp" alt="Qat-qat Napoleon Dilimi"></div>
+          <div class="swiper-slide"><img src="../images/savor27.jpeg" alt="Savor Napoleon Tortu"></div>
           <div class="swiper-slide"><img src="https://th.bing.com/th/id/OIP.ManLUJUf4Q_Bxh9E4GpSHgHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Klassik Napoleon Tortu"></div>
           <div class="swiper-slide"><img src="https://tse3.mm.bing.net/th/id/OIP.DxFjfCOQ4FH3ws5bh8abOwHaFu?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Napoleon Qatları"></div>
           <div class="swiper-slide"><img src="https://i.pinimg.com/originals/6b/63/b0/6b63b0078d3060fea68be6308d9be151.jpg" alt="Napoleon Kremi"></div>
@@ -607,12 +614,13 @@
       </div>
     </article>
 
-    <!-- 8. BALLI TORT (Mövcud 2 + 5 Yeni = 7 Şəkil) -->
+    <!-- 8. BALLI TORT (savor28.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://i.ytimg.com/vi/0HA0Ok3nT6c/maxresdefault.jpg" alt="Ballı Tort Medovik Resept.az"></div>
+          <div class="swiper-slide"><img src="https://resept.az/wp-content/uploads/2017/11/big__balli_tort_01.jpg" alt="Ballı Tort Medovik Resept.az"></div>
           <div class="swiper-slide"><img src="https://azza.az/wp-content/uploads/2026/06/12766d698a30f3aa2edcb2baa6ce8ec6_9e4374b0-78d8-4ba4-95f0-7dd5bca8f761.jpg" alt="Medovik Azza"></div>
+          <div class="swiper-slide"><img src="../images/savor28.jpeg" alt="Savor Ballı Tort Medovik"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/0HA0Ok3nT6c/maxresdefault.jpg" alt="Klassik Ballı Tort"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/4xASXBlb8Js/hqdefault.jpg" alt="Ballı Tort Korjları"></div>
           <div class="swiper-slide"><img src="https://i.ytimg.com/vi/0WoPvSWzMOA/maxresdefault.jpg" alt="Medovik Kərə Yağı Kremi"></div>
@@ -646,11 +654,12 @@
       </div>
     </article>
 
-    <!-- 9. ŞOKOLADLI BRAUNİ (2 Şəkil) -->
+    <!-- 9. ŞOKOLADLI BRAUNİ (savor29.jpeg əlavə edildi) -->
     <article class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/Desertl%C9%99rin-%C6%8Fn-Goz%C9%99li_-Narli-Brauni-Brownie-1170x650.jpg" alt="Şokoladlı Brauni Evdar.az"></div>
+          <div class="swiper-slide"><img src="../images/savor29.jpeg" alt="Savor Şokoladlı Brauni"></div>
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/Sokolad-Sev%C9%99nl%C9%99r-Ucun-Oreo-Pecenyeli-Brauni-Brownie-1170x650.jpg" alt="Brauni Deserti"></div>
         </div>
         <div class="swiper-pagination"></div>
