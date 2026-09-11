@@ -244,6 +244,105 @@
     .nav-bar-top a:hover {
       color: var(--primary-gold);
     }
+  
+    /* Savor Official Footer Styles */
+    .savor-footer {
+      background-color: #120e0b;
+      color: #d1c7bc;
+      padding: 65px 20px 30px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      margin-top: 70px;
+    }
+    .footer-top {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 45px;
+    }
+    @media (max-width: 820px) {
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+    .footer-logo {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #c57b2e;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+    .brand-col p {
+      color: #8f8579;
+      font-size: 0.94rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .footer-col h4 {
+      color: #c57b2e;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col ul li {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .footer-col ul li a, .footer-col ul li span {
+      color: #e5ded6;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-col ul li a:hover {
+      color: #c57b2e;
+    }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #7d7367;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 52px;
+      height: 52px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+      text-decoration: none;
+      z-index: 9999;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .floating-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    }
   </style>
 
   <!-- Recipe Schema JSON-LD -->
@@ -688,6 +787,50 @@
     </article>
 
   </main>
+
+    <!-- SAVOR FOOTER -->
+  <footer class="savor-footer">
+    <div class="footer-top">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">SAVOR</div>
+        <p>Təbii xammaldan premium yağ məhsulları.<br>Pərakəndə və HORECA üçün istehsal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>ƏLAQƏ</h4>
+        <ul>
+          <li><a href="tel:+994775759555">+994 77 575 95 55</a></li>
+          <li><a href="tel:+994517225511">+994 51 722 55 11</a></li>
+          <li><a href="mailto:sales@savor.az">sales@savor.az</a></li>
+          <li><span>Bakı, Azərbaycan</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>MƏHSULLAR</h4>
+        <ul>
+          <li><a href="../product.php?slug=ghee-600g&lang=az.html">SAVOR Ghee 600 q</a></li>
+          <li><a href="../product.php?slug=horeca-20kg&lang=az.html">SAVOR HORECA 20 kq</a></li>
+          <li><a href="../production.php.html">İstehsal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SERTİFİKATLAR</h4>
+        <ul>
+          <li><a href="../certificates.php.html">Bütün sənədlər</a></li>
+          <li><a href="../blog.php.html">Bütün məqalələr</a></li>
+          <li><a href="../horeca.php.html">Topdan sifariş</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 SAVOR. Bütün hüquqlar qorunur.</div>
+      <div class="footer-motto">Keyfiyyət • Şəffaflıq • Stabil təchizat</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/994775759555" target="_blank" class="floating-wa" title="WhatsApp ilə əlaqə">
+    WA
+  </a>
 
   <!-- Swiper.js Script & Filter -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
