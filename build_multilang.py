@@ -23,8 +23,8 @@ def generate_html(lang):
         title = "Kulinariya & Reseptlər | Savor Kərə Yağları & Ghee"
         desc = "Savor kərə yağı və Ghee ilə hazırlanan ən dadlı Azərbaycan milli mətbəxi və şirniyyat reseptləri."
         back_text = "← Ana Səhifə"
-        home_link = "../index.html"
-        contact_link = "../contact.php?lang=az.html"
+        home_link = "/index.html"
+        contact_link = "/contact.php?lang=az.html"
         order_btn = "Sifariş et"
         h1 = "Savor Kulinariya Reseptləri"
         subtitle = "100% təbii Savor kərə yağları və ətirli Ghee ilə hazırlanan, süfrənizin bəzəyi olacaq ən dadlı milli yeməklər, şirniyyatlar və incə desertlər."
@@ -33,39 +33,39 @@ def generate_html(lang):
         ing_title = "🛒 Tərkibi:"
         prep_title = "👨‍🍳 Hazırlanması:"
         
-        r1 = ("Milli Təamlar", "Əsl Zəfəranlı Şah Plov", "⏱️ 120 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 6-8 nəfərlik", "Savor Ghee (150q)", "../product.php?slug=ghee-600g&lang=az.html",
+        r1 = ("Milli Təamlar", "Əsl Zəfəranlı Şah Plov", "⏱️ 120 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 6-8 nəfərlik", "Savor Ghee (150q)", "/product.php?slug=ghee-600g&lang=az.html",
               ["150q Savor Ghee (əridilmiş kərə yağı)", "3 stəkan basmati düyü", "600q quzu əti, qaysı və şabalıd", "Lavaş və təbii zəfəran dəmləməsi"],
               ["Düyü süzülür, ət soğan və Savor Ghee ilə qovrulur.", "Qazan Savor Ghee ilə yağlanır, lavaş düzülüb düyü və ət qat-qat yığılır.", "180°C sobada 60 dəqiqə qızılı rəng alana qədər dəmə qoyulur."])
               
-        r2 = ("Milli Təamlar", "Səbzi Qovurma Plovu", "⏱️ 90 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 5-6 nəfərlik", "Savor Kərə Yağı (180q)", "../products.php?lang=az.html",
+        r2 = ("Milli Təamlar", "Səbzi Qovurma Plovu", "⏱️ 90 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 5-6 nəfərlik", "Savor Kərə Yağı (180q)", "/products.php?lang=az.html",
               ["180q Savor Kərə Yağı", "500q quzu əti və 2 baş soğan", "Kəvər, keşniş, şüyüd, ispanaq, quzuqulağı", "Limon suyu və ya abqora"],
               ["Ət qaynadılıb soğanla Savor kərə yağında qızardılır.", "Göyərtilər iri doğranıb bol Savor kərə yağında zəif odda pörtlədilir.", "Ət və göyərti birləşdirilib abqora əlavə olunur və zəfəranlı düyü ilə verilir."])
 
-        r3 = ("Səhər Təamı", "Kərə Yağlı Pomidor-Yumurta", "⏱️ 20 dəq", "👨‍🍳 Çətinlik: Asan", "🍽️ 2-3 nəfərlik", "Savor Kərə Yağı (80q)", "../products.php?lang=az.html",
+        r3 = ("Səhər Təamı", "Kərə Yağlı Pomidor-Yumurta", "⏱️ 20 dəq", "👨‍🍳 Çətinlik: Asan", "🍽️ 2-3 nəfərlik", "Savor Kərə Yağı (80q)", "/products.php?lang=az.html",
               ["80q təbii Savor Kərə Yağı", "4 ədəd sulu Zirə pomidoru", "4 ədəd kənd yumurtası", "Duz və təzə çəkilmiş istiot"],
               ["Pomidorlar xırda doğranıb tavada öz suyunu çəkənə qədər bişirilir.", "Bol Savor kərə yağı əlavə olunub qızardılır, yumurtalar vurulub qaynar təndir çörəyi ilə təqdim edilir."])
 
-        r4 = ("Milli Şirniyyat", "Klassik Bakı Paxlavası", "⏱️ 90 dəq", "👨‍🍳 Çətinlik: Usta", "🍽️ 12-15 nəfərlik", "Savor Kərə Yağı (300q)", "../products.php?lang=az.html",
+        r4 = ("Milli Şirniyyat", "Klassik Bakı Paxlavası", "⏱️ 90 dəq", "👨‍🍳 Çətinlik: Usta", "🍽️ 12-15 nəfərlik", "Savor Kərə Yağı (300q)", "/products.php?lang=az.html",
               ["300q əridilmiş Savor Kərə Yağı", "1 kq əla növ un və 3 yumurta", "500q qoz ləpəsi və 500q şəkər tozu", "Hil və zəfəran şərbəti"],
               ["Xəmir nazik yayılır, aralarına bol Savor kərə yağı çəkilir və içlik səpilir.", "Romb kəsilib 180°C sobada qızardılır və qaynar şərbət tökülür."])
 
-        r5 = ("Milli Şirniyyat", "Zərif Qat-qat Badambura", "⏱️ 80 dəq", "👨‍🍳 Çətinlik: Usta", "🍽️ 10-12 nəfərlik", "Savor Kərə Yağı (250q)", "../products.php?lang=az.html",
+        r5 = ("Milli Şirniyyat", "Zərif Qat-qat Badambura", "⏱️ 80 dəq", "👨‍🍳 Çətinlik: Usta", "🍽️ 10-12 nəfərlik", "Savor Kərə Yağı (250q)", "/products.php?lang=az.html",
               ["250q ilıq Savor Kərə Yağı (qatlar üçün)", "700q un, 200ml süd və 1 yumurta", "300q üyüdülmüş təmiz badam və şəkər", "Üyüdülmüş hil və vanil"],
               ["Xəmirlər nazik yayılıb aralarına Savor kərə yağı sürtülərək üst-üstə yığılır və rulet bükülür.", "Rulet kəsilib içi açılır, badam içliyi qoyulub bükülür və 160°C sobada ağappaq bişirilir."])
 
-        r6 = ("Milli Şirniyyat", "Əsl Qarabağ Kətəsi", "⏱️ 60 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 8 nəfərlik", "Savor Kərə Yağı (200q)", "../products.php?lang=az.html",
+        r6 = ("Milli Şirniyyat", "Əsl Qarabağ Kətəsi", "⏱️ 60 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 8 nəfərlik", "Savor Kərə Yağı (200q)", "/products.php?lang=az.html",
               ["200q soyudulmuş Savor Kərə Yağı (İçlik üçün)", "500q un, 150q şəkər tozu və vanil", "Xəmir üçün: 400q un, 150q xama və maya"],
               ["İçlik (xoruz): Savor kərə yağı un və şəkərlə ovulub qum halına gətirilir.", "Xəmir yayılır, içinə bol kərə yağlı içlik qoyulub dairəvi bükülür, çəngəllə naxış vurulub 180°C sobada qızardılır."])
 
-        r7 = ("Tort & Desert", "Xırtıldayan Napoleon Tortu", "⏱️ 80 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 8-10 nəfərlik", "Savor Kərə Yağı (350q)", "../products.php?lang=az.html",
+        r7 = ("Tort & Desert", "Xırtıldayan Napoleon Tortu", "⏱️ 80 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 8-10 nəfərlik", "Savor Kərə Yağı (350q)", "/products.php?lang=az.html",
               ["350q dondurulmuş Savor Kərə Yağı", "450q un, buzlu su və sirkə", "Krem: 200q Savor yağı və qatılaşdırılmış süd"],
               ["Kərə yağı unla sürtgəcdən keçirilir, yoğrulub 10 korj şəklində bişirilir.", "Kərə yağı kremi ilə korjlar yağlanıb xırdalanmış qırıntılarla örtülür."])
 
-        r8 = ("Tort & Desert", "Klassik Ballı Tort (Medovik)", "⏱️ 75 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 10-12 nəfərlik", "Savor Kərə Yağı (200q)", "../products.php?lang=az.html",
+        r8 = ("Tort & Desert", "Klassik Ballı Tort (Medovik)", "⏱️ 75 dəq", "👨‍🍳 Çətinlik: Orta", "🍽️ 10-12 nəfərlik", "Savor Kərə Yağı (200q)", "/products.php?lang=az.html",
               ["100q Savor Kərə Yağı (xəmir) + 150q (krem)", "3 x.q. təbii bal və 1 st şəkər tozu", "3 yumurta, 1 ç.q. soda və 400q un", "Krem: Bişmiş qatılaşdırılmış süd və xama"],
               ["Bal, şəkər və Savor yağı buxar vannasında əridilib soda əlavə edilir və xəmir yoğrulur.", "8 nazik qat bişirilir və zərif Savor kərə yağlı kremlə birləşdirilir."])
 
-        r9 = ("Desert", "Zəngin Şokoladlı Brauni", "⏱️ 35 dəq", "👨‍🍳 Çətinlik: Asan", "🍽️ 6-8 nəfərlik", "Savor Kərə Yağı (180q)", "../products.php?lang=az.html",
+        r9 = ("Desert", "Zəngin Şokoladlı Brauni", "⏱️ 35 dəq", "👨‍🍳 Çətinlik: Asan", "🍽️ 6-8 nəfərlik", "Savor Kərə Yağı (180q)", "/products.php?lang=az.html",
               ["180q keyfiyyətli Savor Kərə Yağı", "200q tünd qara şokolad (70%)", "3 yumurta və 150q qəhvəyi şəkər", "100q un və 30q kakao tozu"],
               ["Savor kərə yağı şokoladla birlikdə əridilir və ilıdılır.", "Yumurta və şəkər çalınır, şokoladlı kərə yağı qarışığı və un əlavə olunub 175°C sobada 22-25 dəqiqə bişirilir."])
               
@@ -73,8 +73,8 @@ def generate_html(lang):
         f_c1, f_c2, f_c3 = "ƏLAQƏ", "MƏHSULLAR", "SERTİFİKATLAR"
         f_p1, f_p2, f_p3 = "SAVOR Ghee 600 q", "SAVOR HORECA 20 kq", "İstehsal"
         f_s1, f_s2, f_s3 = "Bütün sənədlər", "Bütün məqalələr", "Topdan sifariş"
-        f_p1_link, f_p2_link, f_p3_link = "../product.php?slug=ghee-600g&lang=az.html", "../product.php?slug=horeca-20kg&lang=az.html", "../production.php?lang=az.html"
-        f_s1_link, f_s2_link, f_s3_link = "../certificates.php?lang=az.html", "../blog.php?lang=az.html", "../horeca.php?lang=az.html"
+        f_p1_link, f_p2_link, f_p3_link = "/product.php?slug=ghee-600g&lang=az.html", "/product.php?slug=horeca-20kg&lang=az.html", "/production.php?lang=az.html"
+        f_s1_link, f_s2_link, f_s3_link = "/certificates.php?lang=az.html", "/blog.php?lang=az.html", "/horeca.php?lang=az.html"
         copy_text = "© 2026 SAVOR. Bütün hüquqlar qorunur."
         motto_text = "Keyfiyyət • Şəffaflıq • Stabil təchizat"
 
@@ -82,8 +82,8 @@ def generate_html(lang):
         title = "Кулинария & Рецепты | Сливочное Масло & Гхи Savor"
         desc = "Самые вкусные рецепты азербайджанской и мировой кухни со сливочным маслом и Гхи Savor."
         back_text = "← Главная Страница"
-        home_link = "../index.php?lang=ru.html"
-        contact_link = "../contact.php?lang=ru.html"
+        home_link = "/ru.html"
+        contact_link = "/contact.php?lang=ru.html"
         order_btn = "Заказать"
         h1 = "Кулинарные Рецепты Savor"
         subtitle = "Вкуснейшие национальные блюда, выпечка и изысканные десерты, приготовленные на 100% натуральном масле и ароматном Гхи Savor."
@@ -92,39 +92,39 @@ def generate_html(lang):
         ing_title = "🛒 Ингредиенты:"
         prep_title = "👨‍🍳 Приготовление:"
 
-        r1 = ("Национальные Блюда", "Шах Плов с Шафраном", "⏱️ 120 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 6-8 порций", "Savor Ghee (150г)", "../product.php?slug=ghee-600g&lang=ru.html",
+        r1 = ("Национальные Блюда", "Шах Плов с Шафраном", "⏱️ 120 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 6-8 порций", "Savor Ghee (150г)", "/product.php?slug=ghee-600g&lang=ru.html",
               ["150г топленого масла Savor Ghee", "3 стакана риса басмати", "600г баранины, курага и каштаны", "Лаваш и настой натурального шафрана"],
               ["Рис отваривается до полуготовности. Мясо обжаривается с луком на масле Savor Ghee.", "Казан смазывается маслом Savor Ghee, выстилается лавашом, слоями выкладывается рис с мясом.", "Запекается в духовке при 180°C около 60 минут до золотистой корочки."])
 
-        r2 = ("Национальные Блюда", "Сябзи Говурма Плов", "⏱️ 90 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 5-6 порций", "Масло Savor (180г)", "../products.php?lang=ru.html",
+        r2 = ("Национальные Блюда", "Сябзи Говурма Плов", "⏱️ 90 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 5-6 порций", "Масло Savor (180г)", "/products.php?lang=ru.html",
               ["180г сливочного масла Savor", "500г мяса баранины и 2 луковицы", "Праздничная зелень: кявяр, кинза, укроп, шпинат, щавель", "Лимонный сок или абгора"],
               ["Мясо отваривается и обжаривается с луком на сливочном масле Savor.", "Зелень тушится на слабом огне в обильном количестве масла Savor.", "Мясо соединяется с зеленью, заправляется абгорой и подается с шафрановым рисом."])
 
-        r3 = ("Завтрак", "Помидор-Юмурта на Масле", "⏱️ 20 мин", "👨‍🍳 Сложность: Легко", "🍽️ 2-3 порции", "Масло Savor (80г)", "../products.php?lang=ru.html",
+        r3 = ("Завтрак", "Помидор-Юмурта на Масле", "⏱️ 20 мин", "👨‍🍳 Сложность: Легко", "🍽️ 2-3 порции", "Масло Savor (80г)", "/products.php?lang=ru.html",
               ["80г натурального сливочного масла Savor", "4 сочных помидора Зиря", "4 деревенских яйца", "Соль и свежемолотый перец"],
               ["Помидоры нарезаются и тушатся в сковороде до испарения влаги.", "Добавляется щедрая порция масла Savor, вбиваются яйца и подается с горячим хлебом."])
 
-        r4 = ("Сладости", "Бакинская Пахлава", "⏱️ 90 мин", "👨‍🍳 Сложность: Мастер", "🍽️ 12-15 порций", "Масло Savor (300г)", "../products.php?lang=ru.html",
+        r4 = ("Сладости", "Бакинская Пахлава", "⏱️ 90 мин", "👨‍🍳 Сложность: Мастер", "🍽️ 12-15 порций", "Масло Savor (300г)", "/products.php?lang=ru.html",
               ["300г растопленного сливочного масла Savor", "1 кг муки высшего сорта и 3 яйца", "500г грецких орехов и 500г сахара", "Кардамон и шафрановый сироп"],
               ["Тесто раскатывается тончайшими слоями, смазывается маслом Savor и посыпается начинкой.", "Нарезается ромбиками, выпекается при 180°C и заливается горячим сиропом."])
 
-        r5 = ("Сладости", "Нежная Слоеная Бадамбура", "⏱️ 80 мин", "👨‍🍳 Сложность: Мастер", "🍽️ 10-12 порций", "Масло Savor (250г)", "../products.php?lang=ru.html",
+        r5 = ("Сладости", "Нежная Слоеная Бадамбура", "⏱️ 80 мин", "👨‍🍳 Сложность: Мастер", "🍽️ 10-12 порций", "Масло Savor (250г)", "/products.php?lang=ru.html",
               ["250г теплого масла Savor (для слоев)", "700г муки, 200мл молока и 1 яйцо", "300г очищенного молотого миндаля и сахар", "Молотый кардамон и ваниль"],
               ["Слои теста обильно смазываются маслом Savor, сворачиваются в рулет.", "Формируются бадамбура с миндальной начинкой и выпекаются при 160°C до белоснежного цвета."])
 
-        r6 = ("Сладости", "Карабахская Кята", "⏱️ 60 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 8 порций", "Масло Savor (200г)", "../products.php?lang=ru.html",
+        r6 = ("Сладости", "Карабахская Кята", "⏱️ 60 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 8 порций", "Масло Savor (200г)", "/products.php?lang=ru.html",
               ["200г охлажденного сливочного масла Savor (для начинки)", "500г муки, 150г сахарной пудры и ваниль", "Тесто: 400г муки, 150г сметаны и дрожжи"],
               ["Начинка: масло Savor перетирается с мукой и сахаром в нежную крошку.", "Тесто раскатывается, начиняется, формуется круг с узором вилкой и выпекается до румянца."])
 
-        r7 = ("Торты & Десерты", "Хрустящий Торт Наполеон", "⏱️ 80 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 8-10 порций", "Масло Savor (350г)", "../products.php?lang=ru.html",
+        r7 = ("Торты & Десерты", "Хрустящий Торт Наполеон", "⏱️ 80 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 8-10 порций", "Масло Savor (350г)", "/products.php?lang=ru.html",
               ["350г замороженного сливочного масла Savor", "450г муки, ледяная вода и уксус", "Крем: 200г сливочного масла Savor и сгущенное молоко"],
               ["Масло натирается с мукой, замешивается слоеное тесто и выпекаются 10 коржей.", "Коржи промазываются пышным кремом из масла Savor и посыпаются крошкой."])
 
-        r8 = ("Торты & Десерты", "Классический Медовик", "⏱️ 75 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 10-12 порций", "Масло Savor (200г)", "../products.php?lang=ru.html",
+        r8 = ("Торты & Десерты", "Классический Медовик", "⏱️ 75 мин", "👨‍🍳 Сложность: Средняя", "🍽️ 10-12 порций", "Масло Savor (200г)", "/products.php?lang=ru.html",
               ["100г масла Savor (тесто) + 150г (крем)", "3 ст.л. натурального меда и 1 стакан сахара", "3 яйца, 1 ч.л. соды и 400г муки", "Крем: Вареная сгущенка и сметана"],
               ["Мед, сахар и масло Savor прогреваются на водяной бане с содой.", "Выпекаются 8 коржей и пропитываются нежнейшим кремом."])
 
-        r9 = ("Десерты", "Насыщенный Шоколадный Брауни", "⏱️ 35 мин", "👨‍🍳 Сложность: Легко", "🍽️ 6-8 порций", "Масло Savor (180г)", "../products.php?lang=ru.html",
+        r9 = ("Десерты", "Насыщенный Шоколадный Брауни", "⏱️ 35 мин", "👨‍🍳 Сложность: Легко", "🍽️ 6-8 порций", "Масло Savor (180г)", "/products.php?lang=ru.html",
               ["180г премиального масла Savor", "200г темного шоколада (70%)", "3 яйца и 150г тростникового сахара", "100г муки и 30г какао-порошка"],
               ["Масло Savor растапливается вместе с шоколадом.", "Яйца взбиваются с сахаром, смешиваются с шоколадным маслом и выпекаются при 175°C 22-25 минут."])
 
@@ -132,17 +132,17 @@ def generate_html(lang):
         f_c1, f_c2, f_c3 = "КОНТАКТЫ", "ПРОДУКЦИЯ", "СЕРТИФИКАТЫ"
         f_p1, f_p2, f_p3 = "SAVOR Ghee 600 г", "SAVOR HORECA 20 кг", "Производство"
         f_s1, f_s2, f_s3 = "Все документы", "Все статьи", "Оптовый заказ"
-        f_p1_link, f_p2_link, f_p3_link = "../product.php?slug=ghee-600g&lang=ru.html", "../product.php?slug=horeca-20kg&lang=ru.html", "../production.php?lang=ru.html"
-        f_s1_link, f_s2_link, f_s3_link = "../certificates.php?lang=ru.html", "../blog.php?lang=ru.html", "../horeca.php?lang=ru.html"
+        f_p1_link, f_p2_link, f_p3_link = "/product.php?slug=ghee-600g&lang=ru.html", "/product.php?slug=horeca-20kg&lang=ru.html", "/production.php?lang=ru.html"
+        f_s1_link, f_s2_link, f_s3_link = "/certificates.php?lang=ru.html", "/blog.php?lang=ru.html", "/horeca.php?lang=ru.html"
         copy_text = "© 2026 SAVOR. Все права защищены."
         motto_text = "Качество • Прозрачность • Стабильные поставки"
 
-    else:
+    else: # English
         title = "Culinary & Recipes | Savor Butter & Ghee"
         desc = "Delicious traditional Azerbaijani and gourmet recipes made with 100% natural Savor butter and Ghee."
         back_text = "← Home Page"
-        home_link = "../index.php?lang=en.html"
-        contact_link = "../contact.php?lang=en.html"
+        home_link = "/en.html"
+        contact_link = "/contact.php?lang=en.html"
         order_btn = "Order Now"
         h1 = "Savor Culinary Recipes"
         subtitle = "Authentic Azerbaijani dishes, traditional pastries and delicate desserts made with 100% pure Savor butter and aromatic Ghee."
@@ -151,39 +151,39 @@ def generate_html(lang):
         ing_title = "🛒 Ingredients:"
         prep_title = "👨‍🍳 Instructions:"
 
-        r1 = ("National Dishes", "Royal Saffron Shah Plov", "⏱️ 120 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 6-8 servings", "Savor Ghee (150g)", "../product.php?slug=ghee-600g&lang=en.html",
+        r1 = ("National Dishes", "Royal Saffron Shah Plov", "⏱️ 120 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 6-8 servings", "Savor Ghee (150g)", "/product.php?slug=ghee-600g&lang=en.html",
               ["150g pure Savor Ghee", "3 cups basmati rice", "600g lamb or veal, apricots and chestnuts", "Lavash flatbread and saffron infusion"],
               ["Rice is parboiled. Meat is sautéed with onions in rich Savor Ghee.", "The pot is greased with Savor Ghee, lined with lavash, and layered with rice and meat.", "Baked at 180°C for 60 minutes until golden and crusty."])
 
-        r2 = ("National Dishes", "Sabzi Govurma Plov", "⏱️ 90 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 5-6 servings", "Savor Butter (180g)", "../products.php?lang=en.html",
+        r2 = ("National Dishes", "Sabzi Govurma Plov", "⏱️ 90 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 5-6 servings", "Savor Butter (180g)", "/products.php?lang=en.html",
               ["180g pure Savor Butter", "500g lamb meat and 2 onions", "Fresh herbs: cilantro, dill, spinach, sorrel, leeks", "Lemon juice or verjuice"],
               ["Meat is braised and browned with onions in Savor butter.", "Herbs are chopped and sautéed gently in plenty of Savor butter.", "Meat and herbs are combined and served over fragrant saffron rice."])
 
-        r3 = ("Breakfast", "Butter Tomato-Egg Scramble", "⏱️ 20 mins", "👨‍🍳 Difficulty: Easy", "🍽️ 2-3 servings", "Savor Butter (80g)", "../products.php?lang=en.html",
+        r3 = ("Breakfast", "Butter Tomato-Egg Scramble", "⏱️ 20 mins", "👨‍🍳 Difficulty: Easy", "🍽️ 2-3 servings", "Savor Butter (80g)", "/products.php?lang=en.html",
               ["80g natural Savor Butter", "4 ripe juicy tomatoes", "4 farm eggs", "Salt and freshly ground black pepper"],
               ["Tomatoes are simmered in a skillet until their juices reduce.", "A generous knob of Savor butter is melted in, eggs are stirred in, and served sizzling with hot bread."])
 
-        r4 = ("Pastries", "Classic Baku Pakhlava", "⏱️ 90 mins", "👨‍🍳 Difficulty: Expert", "🍽️ 12-15 servings", "Savor Butter (300g)", "../products.php?lang=en.html",
+        r4 = ("Pastries", "Classic Baku Pakhlava", "⏱️ 90 mins", "👨‍🍳 Difficulty: Expert", "🍽️ 12-15 servings", "Savor Butter (300g)", "/products.php?lang=en.html",
               ["300g melted Savor Butter", "1 kg premium flour and 3 eggs", "500g ground walnuts and 500g sugar", "Cardamom and saffron syrup"],
               ["Dough is rolled into paper-thin layers, brushed with Savor butter and filled with spiced walnuts.", "Cut into diamond shapes, baked at 180°C and drenched in hot saffron syrup."])
 
-        r5 = ("Pastries", "Delicate Layered Badambura", "⏱️ 80 mins", "👨‍🍳 Difficulty: Expert", "🍽️ 10-12 servings", "Savor Butter (250g)", "../products.php?lang=en.html",
+        r5 = ("Pastries", "Delicate Layered Badambura", "⏱️ 80 mins", "👨‍🍳 Difficulty: Expert", "🍽️ 10-12 servings", "Savor Butter (250g)", "/products.php?lang=en.html",
               ["250g warm Savor Butter (for laminating)", "700g flour, 200ml milk and 1 egg", "300g peeled ground almonds and sugar", "Cardamom and vanilla"],
               ["Laminated dough is generously buttered with Savor butter, rolled into spirals.", "Filled with almond stuffing and baked at 160°C until delicate and ivory white."])
 
-        r6 = ("Pastries", "Authentic Karabakh Kyata", "⏱️ 60 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 8 servings", "Savor Butter (200g)", "../products.php?lang=en.html",
+        r6 = ("Pastries", "Authentic Karabakh Kyata", "⏱️ 60 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 8 servings", "Savor Butter (200g)", "/products.php?lang=en.html",
               ["200g chilled Savor Butter (for crumb filling)", "500g flour, 150g powdered sugar and vanilla", "Dough: 400g flour, 150g sour cream and yeast"],
               ["Filling: Savor butter is rubbed with flour and sugar into rich buttery crumbs.", "Dough is rolled, stuffed, shaped into a round pastry with fork patterns and baked until golden."])
 
-        r7 = ("Cakes & Desserts", "Crispy Napoleon Cake", "⏱️ 80 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 8-10 servings", "Savor Butter (350g)", "../products.php?lang=en.html",
+        r7 = ("Cakes & Desserts", "Crispy Napoleon Cake", "⏱️ 80 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 8-10 servings", "Savor Butter (350g)", "/products.php?lang=en.html",
               ["350g chilled Savor Butter", "450g flour, iced water and vinegar", "Cream: 200g Savor butter and condensed milk"],
               ["Flaky puff pastry layers are rolled thin and baked until crispy.", "Layered with velvety Savor butter cream and coated in crispy crumbs."])
 
-        r8 = ("Cakes & Desserts", "Classic Honey Cake (Medovik)", "⏱️ 75 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 10-12 servings", "Savor Butter (200g)", "../products.php?lang=en.html",
+        r8 = ("Cakes & Desserts", "Classic Honey Cake (Medovik)", "⏱️ 75 mins", "👨‍🍳 Difficulty: Medium", "🍽️ 10-12 servings", "Savor Butter (200g)", "/products.php?lang=en.html",
               ["100g Savor Butter (dough) + 150g (cream)", "3 tbsp natural honey and 1 cup sugar", "3 eggs, 1 tsp baking soda and 400g flour", "Cream: Dulce de leche and sour cream"],
               ["Honey, sugar and Savor butter are gently heated, forming an aromatic dough.", "8 golden layers are baked and infused with luscious buttercream."])
 
-        r9 = ("Desserts", "Rich Chocolate Brownie", "⏱️ 35 mins", "👨‍🍳 Difficulty: Easy", "🍽️ 6-8 servings", "Savor Butter (180g)", "../products.php?lang=en.html",
+        r9 = ("Desserts", "Rich Chocolate Brownie", "⏱️ 35 mins", "👨‍🍳 Difficulty: Easy", "🍽️ 6-8 servings", "Savor Butter (180g)", "/products.php?lang=en.html",
               ["180g premium Savor Butter", "200g dark chocolate (70%)", "3 eggs and 150g brown sugar", "100g flour and 30g cocoa powder"],
               ["Savor butter and dark chocolate are melted together smoothly.", "Eggs and sugar are whipped, folded with chocolate butter, and baked at 175°C for 22-25 mins."])
 
@@ -191,8 +191,8 @@ def generate_html(lang):
         f_c1, f_c2, f_c3 = "CONTACT", "PRODUCTS", "CERTIFICATES"
         f_p1, f_p2, f_p3 = "SAVOR Ghee 600 g", "SAVOR HORECA 20 kg", "Production"
         f_s1, f_s2, f_s3 = "All Documents", "All Articles", "Wholesale Order"
-        f_p1_link, f_p2_link, f_p3_link = "../product.php?slug=ghee-600g&lang=en.html", "../product.php?slug=horeca-20kg&lang=en.html", "../production.php?lang=en.html"
-        f_s1_link, f_s2_link, f_s3_link = "../certificates.php?lang=en.html", "../blog.php?lang=en.html", "../horeca.php?lang=en.html"
+        f_p1_link, f_p2_link, f_p3_link = "/product.php?slug=ghee-600g&lang=en.html", "/product.php?slug=horeca-20kg&lang=en.html", "/production.php?lang=en.html"
+        f_s1_link, f_s2_link, f_s3_link = "/certificates.php?lang=en.html", "/blog.php?lang=en.html", "/horeca.php?lang=en.html"
         copy_text = "© 2026 SAVOR. All rights reserved."
         motto_text = "Quality • Transparency • Reliable Supply"
 
@@ -624,40 +624,47 @@ def generate_html(lang):
 
     /* Floating WhatsApp Button */
     .floating-wa {{
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      width: 54px;
-      height: 54px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.35);
-      text-decoration: none;
-      z-index: 99999;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: fixed !important;
+      bottom: 25px !important;
+      right: 25px !important;
+      width: 55px !important;
+      height: 55px !important;
+      background-color: #25d366 !important;
+      color: #ffffff !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.35) !important;
+      text-decoration: none !important;
+      z-index: 999999 !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease !important;
     }}
 
     .floating-wa:hover {{
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+      transform: scale(1.1) !important;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6) !important;
+    }}
+
+    .floating-wa svg {{
+      width: 32px !important;
+      height: 32px !important;
+      fill: #ffffff !important;
+      display: block !important;
     }}
   </style>
 </head>
 <body>
 
-  <!-- 3 Dilli Naviqasiya Paneli -->
+  <!-- Dəqiq Reseptlərarası Dil Keçidi -->
   <header class="nav-bar-top">
     <a href="{home_link}" class="nav-back">{back_text}</a>
     <span class="nav-brand">SAVOR</span>
     <div class="nav-right">
       <div class="lang-switch">
-        <a href="index.html" {active_az}>AZ</a>
-        <a href="ru.html" {active_ru}>RU</a>
-        <a href="en.html" {active_en}>EN</a>
+        <a href="/recipes/index.html" {active_az}>AZ</a>
+        <a href="/recipes/ru.html" {active_ru}>RU</a>
+        <a href="/recipes/en.html" {active_en}>EN</a>
       </div>
       <a href="{contact_link}" class="btn-order">{order_btn}</a>
     </div>
@@ -721,9 +728,9 @@ def generate_html(lang):
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/994775759555" target="_blank" class="floating-wa" title="WhatsApp ilə əlaqə">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" fill="#ffffff">
+  <!-- Official Floating WhatsApp Button -->
+  <a href="https://wa.me/994775759555" target="_blank" rel="noopener noreferrer" class="floating-wa" title="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
     </svg>
   </a>
@@ -758,16 +765,14 @@ def generate_html(lang):
 </html>"""
     return html_content
 
-# 1. AZ (index.html)
+# Faylları generasiya edirik
 with open("recipes/index.html", "w", encoding="utf-8") as f:
     f.write(generate_html("az"))
 
-# 2. RU (ru.html)
 with open("recipes/ru.html", "w", encoding="utf-8") as f:
     f.write(generate_html("ru"))
 
-# 3. EN (en.html)
 with open("recipes/en.html", "w", encoding="utf-8") as f:
     f.write(generate_html("en"))
 
-print("✓ 3 dilli reseptlər (AZ, RU, EN) və dəqiq dil linkləri uğurla yaradıldı!")
+print("✓ Dəqiq dil keçidləri və WhatsApp loqoları uğurla yeniləndi!")
