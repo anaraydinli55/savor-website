@@ -29,6 +29,10 @@
       padding: 0;
     }
     
+    html {
+      scroll-behavior: smooth;
+    }
+
     html, body {
       overflow-x: hidden !important;
       width: 100% !important;
@@ -159,7 +163,6 @@
       border-color: var(--primary-gold);
     }
 
-    /* DESKTOP & MOBIL DƏQİQ DÜZƏLİŞ */
     .recipes-container {
       width: 100% !important;
       max-width: 1200px;
@@ -181,6 +184,7 @@
       display: flex;
       flex-direction: column;
       margin: 0 !important;
+      scroll-margin-top: 85px;
     }
 
     .swiper {
@@ -313,7 +317,6 @@
       margin-bottom: 5px;
     }
 
-    /* MOBİL DƏQİQ SIFIRLAMA (SOL BOŞLUQSUZ VƏ MƏRKƏZLİ) */
     @media (max-width: 768px) {
       .nav-bar-top {
         padding: 12px 12px !important;
@@ -331,7 +334,7 @@
         width: 100% !important;
         max-width: 100% !important;
         margin: 15px 0 40px 0 !important;
-        padding: 0 8px !important; /* Sol və sağ bərabər minimal 8px */
+        padding: 0 8px !important;
         display: flex !important;
         flex-direction: column !important;
         gap: 18px !important;
@@ -500,7 +503,7 @@
   <main class="recipes-container">
     
     <!-- Recipe 1 -->
-    <article class="recipe-card" data-category="milli">
+    <article id="sah-plov" class="recipe-card" data-category="milli">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg" alt="Savor Recipe 1"></div>
@@ -535,7 +538,7 @@
       </div>
     </article>
     <!-- Recipe 2 -->
-    <article class="recipe-card" data-category="milli">
+    <article id="sebzi-qovurma" class="recipe-card" data-category="milli">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/Vitaminl%C9%99-Z%C9%99ngin-S%C9%99bzi-Qovurma-Plov6-1170x650.jpg" alt="Savor Recipe 2"></div>
@@ -568,7 +571,7 @@
       </div>
     </article>
     <!-- Recipe 3 -->
-    <article class="recipe-card" data-category="seher">
+    <article id="pomidor-yumurta" class="recipe-card" data-category="seher">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th/id/OIP.d-ySK5XCpMNioVi8TtGLBwHaGK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Savor Recipe 3"></div>
@@ -601,7 +604,7 @@
       </div>
     </article>
     <!-- Recipe 4 -->
-    <article class="recipe-card" data-category="sirniyyat">
+    <article id="baki-paxlavasi" class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://th.bing.com/th/id/R.3fe4ab8faeb256d59668b5c591bf3cc5?rik=IWUa2iTmC%2bukxA&riu=http%3a%2f%2fazerbejdzan.eu%2fwp-content%2fuploads%2f2021%2f06%2fBaki-paxlavasi-1.jpg&ehk=J8imnKUsapvDHE787gWD3X1v1QNA7nguN1LPnZHyELg%3d&risl=&pid=ImgRaw&r=0" alt="Savor Recipe 4"></div>
@@ -634,7 +637,7 @@
       </div>
     </article>
     <!-- Recipe 5 -->
-    <article class="recipe-card" data-category="sirniyyat">
+    <article id="badambura" class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse4.mm.bing.net/th/id/OIP.dzTksqIsZrDk4ET_1uw3UAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Savor Recipe 5"></div>
@@ -667,7 +670,7 @@
       </div>
     </article>
     <!-- Recipe 6 -->
-    <article class="recipe-card" data-category="sirniyyat">
+    <article id="qarabag-ketesi" class="recipe-card" data-category="sirniyyat">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://tse2.mm.bing.net/th/id/OIP.YfkofR3kybLsKAZtvd0prAHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Savor Recipe 6"></div>
@@ -700,7 +703,7 @@
       </div>
     </article>
     <!-- Recipe 7 -->
-    <article class="recipe-card" data-category="tort">
+    <article id="napoleon" class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://lent.az/storage/news/2025/november/06/big/690c5f471e90d690c5f471e90e1762418503690c5f471e90b690c5f471e90c.webp" alt="Savor Recipe 7"></div>
@@ -734,7 +737,7 @@
       </div>
     </article>
     <!-- Recipe 8 -->
-    <article class="recipe-card" data-category="tort">
+    <article id="medovik" class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://azza.az/wp-content/uploads/2026/06/12766d698a30f3aa2edcb2baa6ce8ec6_9e4374b0-78d8-4ba4-95f0-7dd5bca8f761.jpg" alt="Savor Recipe 8"></div>
@@ -768,7 +771,7 @@
       </div>
     </article>
     <!-- Recipe 9 -->
-    <article class="recipe-card" data-category="tort">
+    <article id="brauni" class="recipe-card" data-category="tort">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="https://evdar.az/wp-content/uploads/Desertl%C9%99rin-%C6%8Fn-Goz%C9%99li_-Narli-Brauni-Brownie-1170x650.jpg" alt="Savor Recipe 9"></div>
@@ -845,7 +848,7 @@
     </svg>
   </a>
 
-  <!-- Swiper.js Script & Filter -->
+  <!-- Swiper.js Script & Auto Scroll to Hash -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.mySwiper', {
@@ -869,6 +872,18 @@
         }
       });
     }
+
+    // Səhifə açılan kimi birbaşa həmin reseptin üstünə sürüşdürmək
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 300);
+        }
+      }
+    });
   </script>
 
 </body>

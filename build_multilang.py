@@ -1,4 +1,4 @@
-import os, re
+import os
 
 images_map = {
     1: ["https://media.azersun.com/crystalex.az/files/receipt/393cbafb-8e30-43db-8974-b2efd58e8aed_CristalEx.jpeg", "https://b7x9kq.arazmarket.az/storage/blog/sah-plov-2-edited.png", "../images/savor21.jpeg", "https://tse1.mm.bing.net/th/id/OIP.12ML-y5wGvq2iqNEZG33cgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", "https://i.pinimg.com/736x/e5/0f/79/e50f79edb5624b37b0202337d80517d5.jpg", "https://www.rttotravel.com/templates/yootheme/cache/12/Maqluba-121dbb80.jpeg", "https://i1.wp.com/ashleyparamore.com/wp-content/uploads/2021/07/IMG_3673.jpg?w=2048&ssl=1", "https://i.pinimg.com/736x/f3/59/8a/f3598a9d64c8ba8671b3a4e3b64857f4.jpg"],
@@ -197,11 +197,11 @@ def generate_html(lang):
         motto_text = "Quality • Transparency • Reliable Supply"
 
     recipes_data = [r1, r2, r3, r4, r5, r6, r7, r8, r9]
-    rec_anchors = ["sah-plov", "sebzi-qovurma", "pomidor-yumurta", "baki-paxlavasi", "badambura", "qarabag-ketesi", "napoleon", "medovik", "brauni"]
     cat_keys = ["milli", "milli", "seher", "sirniyyat", "sirniyyat", "sirniyyat", "tort", "tort", "tort"]
+    rec_anchors = ["sah-plov", "sebzi-qovurma", "pomidor-yumurta", "baki-paxlavasi", "badambura", "qarabag-ketesi", "napoleon", "medovik", "brauni"]
 
     cards_html = ""
-    for idx, (r, c_key, rec_anchor) in enumerate(zip(recipes_data, cat_keys, rec_anchors), start=1):
+    for idx, (r, c_key, rec_id) in enumerate(zip(recipes_data, cat_keys, rec_anchors), start=1):
         badge, name, time_str, diff_str, yield_str, rec_butter, prod_url, ings, steps = r
         slides = make_slides(idx)
         ing_items = "".join([f"<li><label><input type=\"checkbox\"> <span>{item}</span></label></li>" for item in ings])
@@ -209,7 +209,7 @@ def generate_html(lang):
         
         cards_html += f"""
     <!-- Recipe {idx} -->
-    <article id="{rec_anchor}" class="recipe-card" data-category="{c_key}">
+    <article id="{rec_id}" class="recipe-card" data-category="{c_key}">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">{slides}
         </div>
@@ -271,7 +271,10 @@ def generate_html(lang):
       padding: 0;
     }}
     
-    html { scroll-behavior: smooth; }
+    html {{
+      scroll-behavior: smooth;
+    }}
+
     html, body {{
       overflow-x: hidden !important;
       width: 100% !important;
@@ -402,7 +405,6 @@ def generate_html(lang):
       border-color: var(--primary-gold);
     }}
 
-    /* DESKTOP & MOBIL DƏQİQ DÜZƏLİŞ */
     .recipes-container {{
       width: 100% !important;
       max-width: 1200px;
@@ -413,8 +415,7 @@ def generate_html(lang):
       gap: 25px;
     }}
 
-    .recipe-card {
-      scroll-margin-top: 85px;{
+    .recipe-card {{
       width: 100% !important;
       max-width: 100% !important;
       background: var(--card-bg);
@@ -425,6 +426,7 @@ def generate_html(lang):
       display: flex;
       flex-direction: column;
       margin: 0 !important;
+      scroll-margin-top: 85px;
     }}
 
     .swiper {{
@@ -557,7 +559,6 @@ def generate_html(lang):
       margin-bottom: 5px;
     }}
 
-    /* MOBİL DƏQİQ SIFIRLAMA (SOL BOŞLUQSUZ VƏ MƏRKƏZLİ) */
     @media (max-width: 768px) {{
       .nav-bar-top {{
         padding: 12px 12px !important;
@@ -575,13 +576,12 @@ def generate_html(lang):
         width: 100% !important;
         max-width: 100% !important;
         margin: 15px 0 40px 0 !important;
-        padding: 0 8px !important; /* Sol və sağ bərabər minimal 8px */
+        padding: 0 8px !important;
         display: flex !important;
         flex-direction: column !important;
         gap: 18px !important;
       }}
-      .recipe-card {
-      scroll-margin-top: 85px;{
+      .recipe-card {{
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
@@ -792,7 +792,7 @@ def generate_html(lang):
     </svg>
   </a>
 
-  <!-- Swiper.js Script & Filter -->
+  <!-- Swiper.js Script & Auto Scroll to Hash -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.mySwiper', {{
@@ -816,6 +816,18 @@ def generate_html(lang):
         }}
       }});
     }}
+
+    // Səhifə açılan kimi birbaşa həmin reseptin üstünə sürüşdürmək
+    window.addEventListener('DOMContentLoaded', () => {{
+      if (window.location.hash) {{
+        const target = document.querySelector(window.location.hash);
+        if (target) {{
+          setTimeout(() => {{
+            target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+          }}, 300);
+        }}
+      }}
+    }});
   </script>
 
 </body>
@@ -832,4 +844,4 @@ with open("recipes/ru.html", "w", encoding="utf-8") as f:
 with open("recipes/en.html", "w", encoding="utf-8") as f:
     f.write(generate_html("en"))
 
-print("✓ Reseptlər tam sol boşluqsuz və ekranın eninə simmetrik düzəldildi!")
+print("✓ Reseptlər səhifələri (AZ, RU, EN) tam dolduruldu və anchor ID-ləri aktiv edildi!")
