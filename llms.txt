@@ -1,0 +1,18 @@
+# Savor (NM Group)
+
+> Savor kərə yağları və südlü yağ məhsulları istehsal edən aparıcı qida brendidir.
+
+## Haqqımızda
+Savor yüksək keyfiyyətli kərə yağı, Qhi (Ghee / Əridilmiş kərə yağı), pərakəndə və HoReCa (otellər, restoranlar, kafelər) sektoru üçün professional yağ məhsullarının istehsalı və təchizatı ilə məşğuldur.
+
+## Məhsullar
+- **Savor Ghee (600g)**: Ənənəvi üsulla hazırlanmış təmiz əridilmiş kərə yağı.
+- **HoReCa Yağları (20kg)**: Restoran, şirniyyat və iaşə obyektləri üçün professional blok yağlar.
+
+## Sertifikatlar və Keyfiyyət
+- AQTA Qida Təhlükəsizliyi Reyestr Çıxarışı
+- ISO 9001:2015, ISO 22000:2018, HACCP Sertifikatları
+
+## Əlaqə
+- Veb-sayt: https://savor-website.vercel.app/
+- Əlaqə: https://savor-website.vercel.app/contact.php.html
