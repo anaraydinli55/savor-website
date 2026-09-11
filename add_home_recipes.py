@@ -86,7 +86,7 @@ def get_recipe_section(lang):
             <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5; margin-bottom: 16px;">{r1_desc}</p>
             <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px dashed #e2e8f0;">
               <span style="color: #6b4d1b; font-size: 0.88rem; font-weight: 700;">{r1_butter}</span>
-              <a href="{url}" style="color: #965627; font-weight: 700; font-size: 0.88rem; text-decoration: none;">{view_btn}</a>
+              <a href="{url}#sah-plov" style="color: #965627; font-weight: 700; font-size: 0.88rem; text-decoration: none;">{view_btn}</a>
             </div>
           </div>
         </div>
@@ -94,11 +94,11 @@ def get_recipe_section(lang):
         <!-- 2. Bakı Paxlavası -->
         <div style="background: #ffffff; border-radius: 18px; overflow: hidden; border: 1px solid #ddd7cd; box-shadow: 0 10px 25px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
           <div style="height: 240px; overflow: hidden; position: relative;">
-            <img src="https://th.bing.com/th/id/R.3fe4ab8faeb256d59668b5c591bf3cc5?rik=IWUa2iTmC%2bukxA&riu=http%3a%2f%2fazerbejdzan.eu%2fwp-content%2fuploads%2f2021%2f06%2fBaki-paxlavasi-1.jpg&ehk=J8imnKUsapvDHE787gWD3X1v1QNA7nguN1LPnZHyELg%3d&risl=&pid=ImgRaw&r=0" alt="{r2_title}" style="width: 100%; height: 100%; object-fit: cover;">
+            <a href="{url}#baki-paxlavasi"><img src="https://th.bing.com/th/id/R.3fe4ab8faeb256d59668b5c591bf3cc5?rik=IWUa2iTmC%2bukxA&riu=http%3a%2f%2fazerbejdzan.eu%2fwp-content%2fuploads%2f2021%2f06%2fBaki-paxlavasi-1.jpg&ehk=J8imnKUsapvDHE787gWD3X1v1QNA7nguN1LPnZHyELg%3d&risl=&pid=ImgRaw&r=0" alt="{r2_title}" style="width: 100%; height: 100%; object-fit: cover;">
             <span style="position: absolute; top: 15px; left: 15px; background: rgba(31, 29, 26, 0.85); color: #f7e7ce; font-size: 0.76rem; font-weight: 700; padding: 4px 10px; border-radius: 15px; backdrop-filter: blur(4px);">{r2_tag}</span>
           </div>
           <div style="padding: 24px 20px; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.45rem; color: #1f1d1a; margin-bottom: 8px;">{r2_title}</h3>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.45rem; color: #1f1d1a; margin-bottom: 8px;"><a href="{url}#baki-paxlavasi" style="color: inherit; text-decoration: none;">{r2_title}</a></h3>
             <div style="font-size: 0.84rem; color: #718096; margin-bottom: 12px;">{r2_meta}</div>
             <p style="color: #4a5568; font-size: 0.9rem; line-height: 1.5; margin-bottom: 16px;">{r2_desc}</p>
             <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px dashed #e2e8f0;">

@@ -197,10 +197,11 @@ def generate_html(lang):
         motto_text = "Quality • Transparency • Reliable Supply"
 
     recipes_data = [r1, r2, r3, r4, r5, r6, r7, r8, r9]
+    rec_anchors = ["sah-plov", "sebzi-qovurma", "pomidor-yumurta", "baki-paxlavasi", "badambura", "qarabag-ketesi", "napoleon", "medovik", "brauni"]
     cat_keys = ["milli", "milli", "seher", "sirniyyat", "sirniyyat", "sirniyyat", "tort", "tort", "tort"]
 
     cards_html = ""
-    for idx, (r, c_key) in enumerate(zip(recipes_data, cat_keys), start=1):
+    for idx, (r, c_key, rec_anchor) in enumerate(zip(recipes_data, cat_keys, rec_anchors), start=1):
         badge, name, time_str, diff_str, yield_str, rec_butter, prod_url, ings, steps = r
         slides = make_slides(idx)
         ing_items = "".join([f"<li><label><input type=\"checkbox\"> <span>{item}</span></label></li>" for item in ings])
@@ -208,7 +209,7 @@ def generate_html(lang):
         
         cards_html += f"""
     <!-- Recipe {idx} -->
-    <article class="recipe-card" data-category="{c_key}">
+    <article id="{rec_anchor}" class="recipe-card" data-category="{c_key}">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">{slides}
         </div>
@@ -270,6 +271,7 @@ def generate_html(lang):
       padding: 0;
     }}
     
+    html { scroll-behavior: smooth; }
     html, body {{
       overflow-x: hidden !important;
       width: 100% !important;
@@ -411,7 +413,8 @@ def generate_html(lang):
       gap: 25px;
     }}
 
-    .recipe-card {{
+    .recipe-card {
+      scroll-margin-top: 85px;{
       width: 100% !important;
       max-width: 100% !important;
       background: var(--card-bg);
@@ -577,7 +580,8 @@ def generate_html(lang):
         flex-direction: column !important;
         gap: 18px !important;
       }}
-      .recipe-card {{
+      .recipe-card {
+      scroll-margin-top: 85px;{
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
